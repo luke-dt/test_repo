@@ -36,20 +36,6 @@ library(khroma)
 
 ## import data
 
-### ARG data
-
-```{r}
-arg_dat <-
-  read_tsv("00_all_amrfinder_results.tsv", name_repair = "universal",
-           show_col_types = FALSE) %>%
-  dplyr::rename(sample = Name) %>%
-  # remove stress/virulence, partial matches, and mistranslated genes
-  filter(Element.type == "AMR", 
-         !(Method %in% c("PARTIALP","PARTIAL_CONTIG_ENDX","PARTIALX",
-                                      "PARTIAL_CONTIG_ENDP","INTERNAL_STOP")))
-```
-
-
 ### custom palettes
 
 ```{r}
@@ -261,6 +247,9 @@ plot_proportion_sp
 # save plots
 
 ```{r}
-ggsave(plot_sp_count_drain, )
+ggsave(plot_sp_count_all_no_NAs, filename = "plot.pdf", 
+       device = "pdf", 
+       units = "in",
+       width = 6, height = 6)
 ```
 
