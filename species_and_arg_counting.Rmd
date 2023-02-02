@@ -1,0 +1,1797 @@
+---
+title: "drainomics species+arg analysis"
+output: html_document
+---
+
+# init
+
+## set wd
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Box/dantas_lab/projects/Drainomics/isolate analysis")
+getwd()
+```
+
+## import libraries
+
+```{r}
+library(tidyverse)
+library(reshape2)
+library(ggbreak)
+library(ggbeeswarm)
+library(ggpattern)
+library(cowplot)
+library(stats)
+library(ggsignif)
+library(grid)
+library(gridExtra)
+library(ggExtra)
+library(dendsort)
+callback = function(hc, ...){dendsort(hc)}
+library(networkD3)
+library(viridisLite)
+library(khroma)
+```
+
+## import data
+
+### ARG data
+
+```{r}
+arg_dat <- read_tsv("../00_all_amrfinder_results.tsv", 
+                    name_repair = "universal", show_col_types = FALSE)
+arg_dat <- dplyr::rename(arg_dat, sample=Name)
+# remove stress/virulence, partial matches, and mistranslated genes
+arg_dat <- subset(arg_dat, Element.type == "AMR" &
+                      !(Method %in% c("PARTIALP","PARTIAL_CONTIG_ENDX","PARTIALX",
+                                      "PARTIAL_CONTIG_ENDP","INTERNAL_STOP")))
+```
+
+
+### custom palattes
+
+```{r}
+pakus_colors <- c("#377eb8","#4daf4a")
+names(pakus_colors) <- c("US","PAK")
+
+order_colors <- c("#D1BBD7", "#AE76A3", "#882E72", "#1965B0", "#5289C7", "#7BAFDE", "#4EB265", "#90C987", "#CAE0AB", "#F7F056", "#F6C141", "#F1932D", "#E8601C", "#DC050C")
+names(order_colors) <- c("Lactobacillales",  "Flavobacteriales",  "Campylobacterales",  "Sphingomonadales",  "Rhizobiales",  "Hyphomicrobiales",  "Caulobacterales",  "Burkholderiales",  "Neisseriales",  "Xanthomonadales",  "Enterobacterales",  "Aeromonadales",  "Alteromonadales",  "Pseudomonadales")
+```
+
+### taxonomy data
+
+```{r}
+raw_tax_dat <- read_csv("isolate_metadata.csv")
+tax_dat <- raw_tax_dat
+tax_dat$study <- ifelse(is.na(tax_dat$pakus.code), "This study", "D'Souza et al.")
+tax_dat <- subset(tax_dat, !(source == "Air")) # drop the air samples
+
+# change PAK MO4 to MO5 since MO4 wasn't collected
+tax_dat <- tax_dat %>%
+  mutate(across(c(month), ~ifelse(country == "PAK" & month == 4, 5, .)))
+
+# add room class and subclass
+tax_dat$room.class <- tax_dat$room.code
+tax_dat$room.class[grepl("ICU",tax_dat$room.class)] <- "ICU"
+tax_dat$room.class[grepl("HOME",tax_dat$room.class)] <- "Home/work"
+tax_dat$room.class[grepl("WORK",tax_dat$room.class)] <- "Home/work"
+
+tax_dat$room.subclass <- tax_dat$room.code
+tax_dat$room.subclass[grepl("ICU",tax_dat$room.subclass)] <- "ICU"
+tax_dat$room.subclass[grepl("HOME",tax_dat$room.subclass)] <- "Home"
+tax_dat$room.subclass[grepl("WORK",tax_dat$room.subclass)] <- "Work"
+
+# add counter col for ordering with geom_bar
+#tax_dat$counter <- 1
+```
+
+# Count isolates by taxa
+
+These plots are just basic counting of isolates, subsetted by what country,
+study, or room it came from.
+
+## by species
+
+### drainomics only
+
+```{r}
+# subset out data for plot, and add a copy/paste species col for "other" col
+tmp_plot_dat <- subset(tax_dat, study=="This study")
+# only show the top ~35 species, the other are "other"
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n >= 5)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+# overall species count, colored by order
+plot_sp_count_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=Order)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), fontface = "bold", nudge_y = 2) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by country of origin
+plot_sp_count_by_country_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=country)) +
+    geom_bar(colour="black")+
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = pakus_colors) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by room class
+plot_sp_count_by_roomclass_drain <- ggplot(tmp_plot_dat,
+    aes(x=fct_infreq(Species.plot), fill=room.class)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_bright() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+plot_sp_count_drain
+plot_sp_count_by_country_drain
+plot_sp_count_by_roomclass_drain
+```
+
+### drainomics + pakus overlap
+
+```{r}
+# subset out data for plot, and add a copy/paste species col for "other" col
+tmp_plot_dat <- tax_dat
+# only show the top ~35 species, the other are "other"
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n >= 10)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+
+# overall species count, colored by order, pattern by study
+plot_sp_count_all <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    scale_y_break(c(90, 250)) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+# overall species count, no NAs
+plot_sp_count_all_no_NAs <- ggplot(subset(tmp_plot_dat, !(is.na(Species.plot))), 
+    aes(x=fct_infreq(Species.plot), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position="none",
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+# calculate proportion of isolates that came from each study
+
+proportion_sp <- merge(
+  tmp_plot_dat %>% count(Species, Order, study),
+  tmp_plot_dat %>% count(Species),
+  by="Species", all.y = TRUE
+  )
+proportion_sp <- proportion_sp %>% rename(count = n.x, total.count = n.y)
+proportion_sp <- merge(proportion_sp,
+              subset(tmp_plot_dat, study=="This study") %>% count(Species),
+              all.x = TRUE)
+proportion_sp <- proportion_sp %>% rename(drain.count = n)
+proportion_sp[is.na(proportion_sp)] <- 0
+proportion_sp$drain.pct <- proportion_sp$drain.count / proportion_sp$total.count
+proportion_sp$pct <- proportion_sp$count / proportion_sp$total.count
+
+plot_proportion_sp <- ggplot(proportion_sp, 
+    aes(x=reorder(Species, drain.pct), y=pct, fill=Order, pattern=study)) +
+    geom_col_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Proportion of all isolates") +
+    coord_flip()
+
+plot_sp_count_all
+plot_sp_count_all_no_NAs
+plot_proportion_sp
+```
+
+## by genus
+
+### drainomics only
+
+```{r}
+# subset out data for plot, and add a copy/paste Genus col for "other" col
+tmp_plot_dat <- subset(tax_dat, study=="This study")
+# only show the top ~35 Genus, the other are "other"
+tmp_plot_dat$Genus.plot <- ifelse(
+  tmp_plot_dat$Genus %in% subset(tmp_plot_dat %>% count(Genus), n > 10)$Genus,
+  tmp_plot_dat$Genus,
+  NA
+  )
+
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n > 10)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+
+# overall species count, colored by family
+plot_gen_count_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Genus.plot), fill=Order)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), fontface = "bold", nudge_y = 5) +
+    scale_fill_manual(values = order_colors) +
+    theme_bw() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall genus count of JUST the non=top taxa, colored by family
+plot_gen_count_drain_NAs <- ggplot(subset(tmp_plot_dat, (is.na(Species.plot))), 
+    aes(x=fct_infreq(Genus), fill=Order)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), fontface = "bold", nudge_y = 5) +
+    scale_fill_manual(values = order_colors) +
+    theme_bw() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by country
+plot_gen_count_by_country_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Genus.plot), fill=country)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    scale_fill_manual(values = pakus_colors)+
+    theme_bw() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by room class
+plot_gen_count_by_roomclass_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Genus.plot), fill=room.class)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_bright() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+plot_gen_count_drain
+plot_gen_count_drain_NAs
+plot_gen_count_by_country_drain
+plot_gen_count_by_roomclass_drain
+```
+
+
+### drainomics + pakus overlap
+
+```{r}
+# subset out data for plot, and add a copy/paste Genus col for "other" col
+tmp_plot_dat <- tax_dat
+# only show the top ~35 Genus, the other are "other"
+tmp_plot_dat$Genus.plot <- ifelse(
+  tmp_plot_dat$Genus %in% subset(tmp_plot_dat %>% count(Genus), n > 10)$Genus,
+  tmp_plot_dat$Genus,
+  NA
+  )
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n > 10)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+
+# overall species count, colored by order, pattern by study
+plot_gen_count_all <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Genus.plot), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+# overall genus count, of ONLY NA column, colored by order, pattern by study
+plot_gen_count_all_NAs <- ggplot(subset(tmp_plot_dat, (is.na(Species.plot))), 
+    aes(x=fct_infreq(Genus), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+
+# calculate proportion of isolates that came from each study
+
+propotion_gen <- merge(
+  tax_dat %>% count(Genus, Order, study),
+  tax_dat %>% count(Genus),
+  by="Genus", all.y = TRUE
+  )
+propotion_gen <- propotion_gen %>% rename(count = n.x, total.count = n.y)
+propotion_gen <- merge(propotion_gen,
+              subset(tax_dat, study=="This study") %>% count(Genus),
+              all.x = TRUE)
+propotion_gen <- propotion_gen %>% rename(drain.count = n)
+propotion_gen[is.na(propotion_gen)] <- 0
+propotion_gen$drain.pct <- propotion_gen$drain.count / propotion_gen$total.count
+propotion_gen$pct <- propotion_gen$count / propotion_gen$total.count
+
+plot_propotion_gen <- ggplot(propotion_gen, 
+    aes(x=reorder(Genus, drain.pct), y=pct, fill=Order, pattern=study)) +
+    geom_col_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Genus") +
+    ylab("Proportion of all isolates") +
+    coord_flip()
+
+plot_gen_count_all
+plot_gen_count_all_NAs
+plot_propotion_gen
+```
+
+## save plots
+
+```{r}
+# ggsave("species analysis/figures/taxa quantified/species_count_drain.pdf", 
+#        plot_sp_count_drain, device = "pdf",
+#        units = "in", width = 10, height = 10)
+# ggsave("species analysis/figures/taxa quantified/species_count_by_country_drain.pdf", 
+#        plot_sp_count_by_country_drain, device = "pdf",
+#        units = "in", width = 10, height = 10)
+# ggsave("species analysis/figures/taxa quantified/species_count_by_roomclass_drain.pdf", 
+#        plot_sp_count_by_roomclass_drain, device = "pdf",
+#        units = "in", width = 10, height = 10)
+# 
+# 
+# ggsave("species analysis/figures/taxa quantified/species_count_all.pdf", 
+#        plot_sp_count_all, device = "pdf",
+#        units = "in", width = 14, height = 7)
+# ggsave("species analysis/figures/taxa quantified/species_count_all_top.pdf", 
+#        plot_sp_count_all_no_NAs, device = "pdf",
+#        units = "in", width = 8, height = 8)
+# ggsave("species analysis/figures/taxa quantified/species_proportion.pdf", 
+#        plot_proportion_sp, device = "pdf",
+#        units = "in", width = 10, height = 28)
+# 
+# 
+# ggsave("species analysis/figures/taxa quantified/genus_count_drain.pdf", 
+#        plot_gen_count_drain, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# ggsave("species analysis/figures/taxa quantified/genus_count_drain_nas_only.pdf", 
+#        plot_gen_count_drain_NAs, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# ggsave("species analysis/figures/taxa quantified/genus_count_by_country_drain.pdf", 
+#        plot_gen_count_by_country_drain, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# ggsave("species analysis/figures/taxa quantified/genus_count_by_roomclass_drain.pdf", 
+#        plot_gen_count_by_roomclass_drain, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# ggsave("species analysis/figures/taxa quantified/genus_count_all.pdf", 
+#        plot_gen_count_all, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# ggsave("species analysis/figures/taxa quantified/genus_count_all_NAs_only.pdf", 
+#        plot_gen_count_all_NAs, device = "pdf",
+#        units = "in", width = 10, height = 8)
+# ggsave("species analysis/figures/taxa quantified/genus_proportion.pdf", 
+#        plot_propotion_gen, device = "pdf",
+#        units = "in", width = 10, height = 10)
+
+```
+
+
+# ARG counting
+
+## add ARG count and resistance class count to tax_dat
+
+```{r}
+tax_dat <- merge(tax_dat, 
+                 arg_dat %>% count(sample),
+                 by="sample", 
+                 all.x = TRUE)
+tax_dat <- rename(arg.count=n, tax_dat)
+tax_dat <- merge(tax_dat, 
+                 arg_dat %>% group_by(sample) %>% summarise(num.res.classes = n_distinct(Class)),
+                 by="sample", 
+                 all.x = TRUE)
+tax_dat <- tidyr::replace_na(tax_dat, list(arg.count=0, num.res.classes=0))
+```
+
+## plot overall ARG counts
+
+```{r}
+tax_dat_drain <- subset(tax_dat, study == "This study")
+
+# comparing number of ARGs
+
+plot_arg_count_by_room <- 
+  ggplot(tax_dat_drain, aes(x=room.class, y=arg.count)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=room.class)) +
+    scale_color_bright() +
+    theme_bw() +
+    geom_signif(comparisons = list(c("ICU", "Home/work")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+plot_arg_count_by_room_by_country <- 
+  ggplot(tax_dat_drain, aes(x=room.class, y=arg.count)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=room.class)) +
+    scale_color_bright() +
+    facet_grid(cols=vars(country),
+              scales="free_y") +
+    theme_bw() +
+    ylim(c(0,60)) + # need to make extra room for manual significance bars
+    theme(legend.position="none") +
+    geom_signif(comparisons = list(c("ICU", "Home/work")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+plot_arg_count_by_country_by_room <- 
+  ggplot(tax_dat_drain, aes(x=country, y=arg.count)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=country)) +
+    scale_color_manual(values = pakus_colors) +
+    facet_grid(cols=vars(room.class),
+              scales="free_y") +
+    theme_bw() +
+    theme(legend.position="none") +
+    geom_signif(comparisons = list(c("PAK", "US")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+
+# comparing diversity of ARGs
+
+plot_num_res_classes_by_room <- 
+  ggplot(tax_dat_drain, aes(x=room.class, y=num.res.classes)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=room.class)) +
+    scale_color_bright() +
+    theme_bw() +
+    geom_signif(comparisons = list(c("ICU", "Home/work")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+plot_num_res_classes_by_room_by_country <- 
+  ggplot(tax_dat_drain, aes(x=room.class, y=num.res.classes)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=room.class)) +
+    scale_color_bright() +
+    facet_grid(cols=vars(country),
+              scales="free_y") +
+    theme_bw() +
+    ylim(c(0,60)) + # need to make extra room for manual significance bars
+    theme(legend.position="none") +
+    geom_signif(comparisons = list(c("ICU", "Home/work")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+plot_num_res_classes_by_country_by_room <- 
+  ggplot(tax_dat_drain, aes(x=country, y=num.res.classes)) +
+    geom_boxplot(outlier.shape = NA) +
+    geom_quasirandom(alpha=0.5, aes(color=country)) +
+    scale_color_manual(values = pakus_colors) +
+    facet_grid(cols=vars(room.class),
+              scales="free_y") +
+    theme_bw() +
+    theme(legend.position="none") +
+    geom_signif(comparisons = list(c("PAK", "US")),
+                map_signif_level = TRUE,
+                tip_length = 0)
+
+plot_arg_count_by_room
+plot_arg_count_by_room_by_country
+plot_arg_count_by_country_by_room
+
+plot_num_res_classes_by_room
+plot_num_res_classes_by_room_by_country
+plot_num_res_classes_by_country_by_room
+```
+
+## count ARGs per species 
+
+### count species per country
+
+```{r}
+# PAK isolates
+sp_count_by_roomclass_PAK <- aggregate(sample~Species+room.class, data=subset
+                                       (tax_dat_drain, country == "PAK"), FUN=length, drop=FALSE)
+sp_count_by_roomclass_PAK <- rename(sp_count_by_roomclass_PAK, n=sample)
+sp_count_by_roomclass_PAK[is.na(sp_count_by_roomclass_PAK)] <- 0
+
+# calculate difference between 2 room classes for sorting later
+sp_count_by_roomclass_PAK <- dcast(sp_count_by_roomclass_PAK, Species~room.class, value.var="n")
+sp_count_by_roomclass_PAK$diff <- sp_count_by_roomclass_PAK$ICU - sp_count_by_roomclass_PAK$`Home/work`
+sp_count_by_roomclass_PAK$p.diff <- sp_count_by_roomclass_PAK$diff / (sp_count_by_roomclass_PAK$ICU + sp_count_by_roomclass_PAK$`Home/work`)
+sp_count_by_roomclass_PAK <- sp_count_by_roomclass_PAK[order(sp_count_by_roomclass_PAK$p.diff, sp_count_by_roomclass_PAK$diff),]
+sp_count_by_roomclass_PAK$order <- seq(1, nrow(sp_count_by_roomclass_PAK))
+sp_count_by_roomclass_PAK <- melt(sp_count_by_roomclass_PAK, id.vars=c("Species", "diff", "p.diff", "order"), variable.name = "room.class", value.name="n")
+
+# US isolates
+sp_count_by_roomclass_US <- aggregate(sample~Species+room.class, data=subset
+                                       (tax_dat_drain, country == "US"), FUN=length, drop=FALSE)
+sp_count_by_roomclass_US <- rename(sp_count_by_roomclass_US, n=sample)
+sp_count_by_roomclass_US[is.na(sp_count_by_roomclass_US)] <- 0
+
+# calculate difference between 2 room classes for sorting later
+sp_count_by_roomclass_US <- dcast(sp_count_by_roomclass_US, Species~room.class, value.var="n")
+sp_count_by_roomclass_US$diff <- sp_count_by_roomclass_US$ICU - sp_count_by_roomclass_US$`Home/work`
+sp_count_by_roomclass_US$p.diff <- sp_count_by_roomclass_US$diff / (sp_count_by_roomclass_US$ICU + sp_count_by_roomclass_US$`Home/work`)
+sp_count_by_roomclass_US <- sp_count_by_roomclass_US[order(sp_count_by_roomclass_US$p.diff, sp_count_by_roomclass_US$diff),]
+sp_count_by_roomclass_US$order <- seq(1, nrow(sp_count_by_roomclass_US))
+sp_count_by_roomclass_US <- melt(sp_count_by_roomclass_US, id.vars=c("Species", "diff", "p.diff", "order"), variable.name = "room.class", value.name="n")
+```
+
+### calculate average ARGs per species, by room class
+
+To see if the isolates are from the ICU have more ARGs than ones from home/public buildings, I'll calculate average number of ARGs per species, subsetted by room. I'll first subset by country since the isolates from PAK probably have more ARGs also.
+
+```{r}
+# calculate average # of ARGs per species
+arg_count_by_roomclass_US <- do.call(data.frame, 
+  aggregate(arg.count~Species+room.class, 
+   data=subset(tax_dat_drain, country == "US"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+   )
+
+arg_count_by_roomclass_PAK <- do.call(data.frame, 
+  aggregate(arg.count~Species+room.class, 
+   data=subset(tax_dat_drain, country == "PAK"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+   )
+
+# calculate average number of resistance classes
+
+arg_count_by_roomclass_US <- merge(
+  arg_count_by_roomclass_US,
+  do.call(data.frame, 
+   aggregate(num.res.classes~Species+room.class, 
+   data=subset(tax_dat_drain, country == "US"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+  ))
+
+arg_count_by_roomclass_PAK <- merge(
+  arg_count_by_roomclass_PAK,
+  do.call(data.frame, 
+   aggregate(num.res.classes~Species+room.class, 
+   data=subset(tax_dat_drain, country == "PAK"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+  ))
+
+# add order for arranging the plots later
+arg_count_by_roomclass_US <- distinct(merge(
+  arg_count_by_roomclass_US, 
+  subset(sp_count_by_roomclass_US,
+  select=c(Species, order)),
+  by="Species", all.y=FALSE))
+
+arg_count_by_roomclass_PAK <- distinct(merge(
+  arg_count_by_roomclass_PAK, 
+  subset(sp_count_by_roomclass_PAK,
+  select=c(Species, order)),
+  by="Species", all.y=FALSE))
+```
+
+
+### pairwise wilcoxon tests 
+
+To test for significant differences, I'll use pairwise Wilcoxon tests with FDR 
+correction. I tried lm, but it isn't the best fit for this data since I don't
+care about every comparison, just the same species in a different room class.
+
+```{r}
+wilcox.test.species <- function(df, location, species, comp) {
+  return(
+  wilcox.test(x = subset(df,
+                         (Species == species & 
+                          location == country &
+                          room.class == "ICU"))[,comp],
+              y = subset(df,
+                         (Species == species & 
+                          location == country &
+                          room.class == "Home/work"))[,comp],
+              correct = TRUE, exact=FALSE
+              )$p.value)
+}
+
+
+# select species in both and perform wilcoxon test
+
+# PAK isolates
+wilcox_results_PAK <- data.frame(
+  species = unique(subset(sp_count_by_roomclass_PAK, 
+                          p.diff > -1.0 & p.diff < 1.0)$Species))
+
+wilcox_results_PAK$pvalue.argcount <- sapply(wilcox_results_PAK$species, 
+                                             FUN = wilcox.test.species, 
+                                             df = tax_dat_drain, 
+                                             location = "PAK", 
+                                             comp = "arg.count")
+
+wilcox_results_PAK$pvalue.argcount.adjusted <- p.adjust(wilcox_results_PAK$pvalue.argcount, 
+                                                        method="fdr")
+
+wilcox_results_PAK$stars.argcount <- cut(wilcox_results_PAK$pvalue.argcount.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+wilcox_results_PAK$pvalue.num.res.classes <- sapply(wilcox_results_PAK$species, 
+                                                    FUN = wilcox.test.species, 
+                                                    df = tax_dat_drain, 
+                                                    location = "PAK", 
+                                                    comp = "num.res.classes")
+
+wilcox_results_PAK$pvalue.num.res.classes.adjusted <- p.adjust(wilcox_results_PAK$pvalue.num.res.classes, 
+                                                        method="fdr")
+
+wilcox_results_PAK$stars.num.res.classes <- cut(wilcox_results_PAK$pvalue.num.res.classes.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+# US isolates
+wilcox_results_US <- data.frame(
+  species = unique(subset(sp_count_by_roomclass_US, 
+                          p.diff > -1.0 & p.diff < 1.0)$Species))
+
+wilcox_results_US$pvalue.argcount <- sapply(wilcox_results_US$species, 
+                                             FUN = wilcox.test.species, 
+                                             df = tax_dat_drain, 
+                                             location = "US", 
+                                             comp = "arg.count")
+
+wilcox_results_US$pvalue.argcount.adjusted <- p.adjust(wilcox_results_US$pvalue.argcount, 
+                                                        method="fdr")
+
+wilcox_results_US$stars.argcount <- cut(wilcox_results_US$pvalue.argcount.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+wilcox_results_US$pvalue.num.res.classes <- sapply(wilcox_results_US$species, 
+                                                    FUN = wilcox.test.species, 
+                                                    df = tax_dat_drain, 
+                                                    location = "US", 
+                                                    comp = "num.res.classes")
+
+wilcox_results_US$pvalue.num.res.classes.adjusted <- p.adjust(wilcox_results_US$pvalue.num.res.classes, 
+                                                        method="fdr")
+
+wilcox_results_US$stars.num.res.classes <- cut(wilcox_results_US$pvalue.num.res.classes.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+# combine wilcoxon results into single DF
+
+arg_count_by_roomclass_US <- merge(arg_count_by_roomclass_US, wilcox_results_US,
+                                   by.x = "Species", by.y = "species",
+                                   all.x = TRUE)
+
+arg_count_by_roomclass_PAK <- merge(arg_count_by_roomclass_PAK, wilcox_results_PAK,
+                                    by.x = "Species", by.y = "species",
+                                    all.x = TRUE)
+```
+
+## count ARGs per genus 
+
+### count genus per country
+
+```{r}
+# PAK isolates
+gen_count_by_roomclass_PAK <- aggregate(sample~Genus+room.class, data=subset
+                                       (tax_dat_drain, country == "PAK"), FUN=length, drop=FALSE)
+gen_count_by_roomclass_PAK <- rename(gen_count_by_roomclass_PAK, n=sample)
+gen_count_by_roomclass_PAK[is.na(gen_count_by_roomclass_PAK)] <- 0
+
+# calculate difference between 2 room classes for sorting later
+gen_count_by_roomclass_PAK <- dcast(gen_count_by_roomclass_PAK, Genus~room.class, value.var="n")
+gen_count_by_roomclass_PAK$diff <- gen_count_by_roomclass_PAK$ICU - gen_count_by_roomclass_PAK$`Home/work`
+gen_count_by_roomclass_PAK$p.diff <- gen_count_by_roomclass_PAK$diff / (gen_count_by_roomclass_PAK$ICU + gen_count_by_roomclass_PAK$`Home/work`)
+gen_count_by_roomclass_PAK <- gen_count_by_roomclass_PAK[order(gen_count_by_roomclass_PAK$p.diff, gen_count_by_roomclass_PAK$diff),]
+gen_count_by_roomclass_PAK$order <- seq(1, nrow(gen_count_by_roomclass_PAK))
+gen_count_by_roomclass_PAK <- melt(gen_count_by_roomclass_PAK, id.vars=c("Genus", "diff", "p.diff", "order"), variable.name = "room.class", value.name="n")
+
+# US isolates
+gen_count_by_roomclass_US <- aggregate(sample~Genus+room.class, data=subset
+                                       (tax_dat_drain, country == "US"), FUN=length, drop=FALSE)
+gen_count_by_roomclass_US <- rename(gen_count_by_roomclass_US, n=sample)
+gen_count_by_roomclass_US[is.na(gen_count_by_roomclass_US)] <- 0
+
+# calculate difference between 2 room classes for sorting later
+gen_count_by_roomclass_US <- dcast(gen_count_by_roomclass_US, Genus~room.class, value.var="n")
+gen_count_by_roomclass_US$diff <- gen_count_by_roomclass_US$ICU - gen_count_by_roomclass_US$`Home/work`
+gen_count_by_roomclass_US$p.diff <- gen_count_by_roomclass_US$diff / (gen_count_by_roomclass_US$ICU + gen_count_by_roomclass_US$`Home/work`)
+gen_count_by_roomclass_US <- gen_count_by_roomclass_US[order(gen_count_by_roomclass_US$p.diff, gen_count_by_roomclass_US$diff),]
+gen_count_by_roomclass_US$order <- seq(1, nrow(gen_count_by_roomclass_US))
+gen_count_by_roomclass_US <- melt(gen_count_by_roomclass_US, id.vars=c("Genus", "diff", "p.diff", "order"), variable.name = "room.class", value.name="n")
+```
+
+### calculate average ARGs per Genus, by room class
+
+To see if the isolates are from the ICU have more ARGs than ones from home/public buildings, I'll calculate average number of ARGs per genus, subsetted by room. I'll first subset by country since the isolates from PAK probably have more ARGs also.
+
+```{r}
+# calculate average # of ARGs per genus
+arg_count_by_roomclass_US_gen <- do.call(data.frame, 
+  aggregate(arg.count~Genus+room.class, 
+   data=subset(tax_dat_drain, country == "US"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+   )
+
+arg_count_by_roomclass_PAK_gen <- do.call(data.frame, 
+  aggregate(arg.count~Genus+room.class, 
+   data=subset(tax_dat_drain, country == "PAK"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+   )
+
+# calculate average number of resistance classes
+
+arg_count_by_roomclass_US_gen <- merge(
+  arg_count_by_roomclass_US_gen,
+  do.call(data.frame, 
+   aggregate(num.res.classes~Genus+room.class, 
+   data=subset(tax_dat_drain, country == "US"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+  ))
+
+arg_count_by_roomclass_PAK_gen <- merge(
+  arg_count_by_roomclass_PAK_gen,
+  do.call(data.frame, 
+   aggregate(num.res.classes~Genus+room.class, 
+   data=subset(tax_dat_drain, country == "PAK"), 
+   FUN=function(x) c(mean = mean(x), median= median(x) ),
+   drop=FALSE)
+  ))
+
+# add order for arranging the plots later
+arg_count_by_roomclass_US_gen <- distinct(merge(
+  arg_count_by_roomclass_US_gen, 
+  subset(gen_count_by_roomclass_US,
+  select=c(Genus, order)),
+  by="Genus", all.y=FALSE))
+
+arg_count_by_roomclass_PAK_gen <- distinct(merge(
+  arg_count_by_roomclass_PAK_gen, 
+  subset(gen_count_by_roomclass_PAK,
+  select=c(Genus, order)),
+  by="Genus", all.y=FALSE))
+```
+
+
+### pairwise wilcoxon tests 
+
+To test for significant differences, I'll use pairwise Wilcoxon tests with FDR 
+correction. I tried lm, but it isn't the best fit for this data since I don't
+care about every comparison, just the same species in a different room class.
+
+```{r}
+wilcox.test.genus <- function(df, location, genus, comp) {
+  return(
+  wilcox.test(x = subset(df,
+                         (Genus == genus & 
+                          location == country &
+                          room.class == "ICU"))[,comp],
+              y = subset(df,
+                         (Genus == genus & 
+                          location == country &
+                          room.class == "Home/work"))[,comp],
+              correct = TRUE, exact=FALSE
+              )$p.value)
+}
+
+
+# select Genus in both and perform wilcoxon test
+
+# PAK isolates
+wilcox_results_PAK_gen <- data.frame(
+  genus = unique(subset(gen_count_by_roomclass_PAK, 
+                          p.diff > -1.0 & p.diff < 1.0)$Genus))
+
+wilcox_results_PAK_gen$pvalue.argcount <- sapply(wilcox_results_PAK_gen$genus, 
+                                             FUN = wilcox.test.genus, 
+                                             df = tax_dat_drain, 
+                                             location = "PAK", 
+                                             comp = "arg.count")
+
+wilcox_results_PAK_gen$pvalue.argcount.adjusted <- p.adjust(wilcox_results_PAK_gen$pvalue.argcount, 
+                                                        method="fdr")
+
+wilcox_results_PAK_gen$stars.argcount <- cut(wilcox_results_PAK_gen$pvalue.argcount.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+wilcox_results_PAK_gen$pvalue.num.res.classes <- sapply(wilcox_results_PAK_gen$genus, 
+                                                    FUN = wilcox.test.genus, 
+                                                    df = tax_dat_drain, 
+                                                    location = "PAK", 
+                                                    comp = "num.res.classes")
+
+wilcox_results_PAK_gen$pvalue.num.res.classes.adjusted <- p.adjust(wilcox_results_PAK_gen$pvalue.num.res.classes, 
+                                                        method="fdr")
+
+wilcox_results_PAK_gen$stars.num.res.classes <- cut(wilcox_results_PAK_gen$pvalue.num.res.classes.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+# US isolates
+wilcox_results_US_gen <- data.frame(
+  genus = unique(subset(gen_count_by_roomclass_US, 
+                          p.diff > -1.0 & p.diff < 1.0)$Genus))
+
+wilcox_results_US_gen$pvalue.argcount <- sapply(wilcox_results_US_gen$genus, 
+                                             FUN = wilcox.test.genus, 
+                                             df = tax_dat_drain, 
+                                             location = "US", 
+                                             comp = "arg.count")
+
+wilcox_results_US_gen$pvalue.argcount.adjusted <- p.adjust(wilcox_results_US_gen$pvalue.argcount, 
+                                                        method="fdr")
+
+wilcox_results_US_gen$stars.argcount <- cut(wilcox_results_US_gen$pvalue.argcount.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+wilcox_results_US_gen$pvalue.num.res.classes <- sapply(wilcox_results_US_gen$genus, 
+                                                    FUN = wilcox.test.genus, 
+                                                    df = tax_dat_drain, 
+                                                    location = "US", 
+                                                    comp = "num.res.classes")
+
+wilcox_results_US_gen$pvalue.num.res.classes.adjusted <- p.adjust(wilcox_results_US_gen$pvalue.num.res.classes, 
+                                                        method="fdr")
+
+wilcox_results_US_gen$stars.num.res.classes <- cut(wilcox_results_US_gen$pvalue.num.res.classes.adjusted, 
+                                         breaks=c(-Inf, 0.001, 0.01, 0.05, Inf), 
+                                         label=c("***", "**", "*", ""))
+
+# combine wilcoxon results into single DF
+
+arg_count_by_roomclass_US_gen <- merge(arg_count_by_roomclass_US_gen, wilcox_results_US_gen,
+                                   by.x = "Genus", by.y = "genus",
+                                   all.x = TRUE)
+
+arg_count_by_roomclass_PAK_gen <- merge(arg_count_by_roomclass_PAK_gen, wilcox_results_PAK_gen,
+                                    by.x = "Genus", by.y = "genus",
+                                    all.x = TRUE)
+```
+
+## make ARG heatmap plots
+
+### making scale limits
+
+```{r}
+# generate palette limits so that all plots are on the same scale
+arg_count_gradient_limits = c(0, max(arg_count_by_roomclass_PAK$arg.count.mean, na.rm = TRUE))
+num_res_classes_gradient_limits = c(0, max(arg_count_by_roomclass_PAK$num.res.classes.mean, na.rm = TRUE))
+tmp <- tax_dat %>% filter(study == "This study" & country == "PAK") %>% count(Species)
+sp_count_limits = c(0, max(tmp$n)) 
+
+# testing how they will look
+## species plots
+ggplot(arg_count_by_roomclass_PAK,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=arg.count.mean)) +
+    geom_tile() +
+    geom_text(aes(label=stars.argcount), color="grey20", size=5, nudge_x=0.25, angle=90) +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    theme_classic() +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(angle=90),
+        axis.text.y=element_text(color = "white", angle=90),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+ggplot(arg_count_by_roomclass_PAK,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    geom_text(aes(label=stars.argcount), color="grey20", size=5, nudge_x=0.25, angle=90) +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    theme_classic() +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(angle=90),
+        axis.text.y=element_text(color = "white", angle=90),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+
+arg_count_gen_gradient_limits = c(0, max(arg_count_by_roomclass_PAK_gen$arg.count.mean, na.rm = TRUE))
+num_res_classes_gen_gradient_limits = c(0, max(arg_count_by_roomclass_PAK_gen$num.res.classes.mean, na.rm = TRUE))
+tmp <- tax_dat %>% filter(study == "This study" & country == "PAK") %>% count(Genus)
+gen_count_limits = c(0, max(tmp$n)) 
+
+## genus plots
+ggplot(arg_count_by_roomclass_PAK_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=arg.count.mean)) +
+    geom_tile() +
+    geom_text(aes(label=stars.argcount), color="grey20", size=5, nudge_x=0.25, angle=90) +
+    scale_fill_YlOrBr(limits = arg_count_gen_gradient_limits) +
+    theme_classic() +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(angle=90),
+        axis.text.y=element_text(color = "white", angle=90),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+ggplot(arg_count_by_roomclass_PAK_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    geom_text(aes(label=stars.argcount), color="grey20", size=5, nudge_x=0.25, angle=90) +
+    scale_fill_iridescent(limits = num_res_classes_gen_gradient_limits) +
+    theme_classic() +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(angle=90),
+        axis.text.y=element_text(color = "white", angle=90),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+```
+
+
+### PAK isolates
+
+#### by species
+
+```{r}
+# average number of ARGs
+plot_avg_arg_count_PAK <- ggplot(arg_count_by_roomclass_PAK,
+        aes(x=reorder(Species, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+plot_avg_arg_count_PAK_no_leg <- ggplot(arg_count_by_roomclass_PAK,
+        aes(x=reorder(Species, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean ARGs")
+
+# ARG diversity
+# add labels to this one for arranging later
+plot_avg_num_res_classes_PAK <- ggplot(arg_count_by_roomclass_PAK,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(size=8, face = "italic", 
+                                 angle=90, hjust = 1, vjust=0.5),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+
+plot_avg_num_res_classes_PAK_no_leg <- ggplot(arg_count_by_roomclass_PAK,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean number of resistance classes")
+
+plot_sp_count_byroomclass_PAK <- ggplot(sp_count_by_roomclass_PAK, 
+    aes(x=reorder(Species, -order), y=n, fill=room.class)) +
+    geom_bar(stat="identity",colour="black") +
+    #ylim(sp_count_limits) +
+    theme_classic() +
+    scale_fill_bright() +
+    theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_text(size=10),
+        plot.title=element_text(size=18, hjust = 0.5, face="bold"),
+        legend.position=c(0.8,0.8),
+        legend.title=element_text(size=18, face="bold"),
+        legend.text=element_text(size=18),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    ylab("Number of isolates")
+
+plot_grid(plot_sp_count_byroomclass_PAK, plot_avg_arg_count_PAK, plot_avg_num_res_classes_PAK,
+          nrow = 3, ncol = 1, rel_heights = c(3,1,2.1), align = "v")
+
+```
+
+#### by genus
+
+```{r}
+# average number of ARGs
+plot_avg_arg_count_gen_PAK <- ggplot(arg_count_by_roomclass_PAK_gen,
+        aes(x=reorder(Genus, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gen_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+plot_avg_arg_count_gen_PAK_no_leg <- ggplot(arg_count_by_roomclass_PAK_gen,
+        aes(x=reorder(Genus, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean ARGs")
+
+# ARG diversity
+# add labels to this one for arranging later
+plot_avg_num_res_classes_gen_PAK <- ggplot(arg_count_by_roomclass_PAK_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(size=8, face = "italic", 
+                                 angle=90, hjust = 1, vjust=0.5),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+
+plot_avg_num_res_classes_gen_PAK_no_leg <- ggplot(arg_count_by_roomclass_PAK_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean number of resistance classes")
+
+plot_gen_count_byroomclass_PAK <- ggplot(gen_count_by_roomclass_PAK, 
+    aes(x=reorder(Genus, -order), y=n, fill=room.class)) +
+    geom_bar(stat="identity",colour="black") +
+    #ylim(gen_count_limits) +
+    theme_classic() +
+    scale_fill_bright() +
+    theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_text(size=10),
+        plot.title=element_text(size=18, hjust = 0.5, face="bold"),
+        legend.position=c(0.8,0.8),
+        legend.title=element_text(size=18, face="bold"),
+        legend.text=element_text(size=18),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    ylab("Number of isolates")
+
+plot_grid(plot_gen_count_byroomclass_PAK, plot_avg_arg_count_gen_PAK, plot_avg_num_res_classes_gen_PAK,
+          nrow = 3, ncol = 1, rel_heights = c(3,1,2.1), align = "v")
+```
+
+
+### US isolates
+
+#### by species
+
+```{r}
+# average number of ARGs
+plot_avg_arg_count_US <- ggplot(arg_count_by_roomclass_US,
+        aes(x=reorder(Species, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        #legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+plot_avg_arg_count_US_no_leg <- ggplot(arg_count_by_roomclass_US,
+        aes(x=reorder(Species, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean ARGs")
+
+# ARG diversity
+# add labels to this one for arranging later
+plot_avg_num_res_classes_US <- ggplot(arg_count_by_roomclass_US,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(size=8, face = "italic", 
+                                 angle=90, hjust = 1, vjust=0.5),
+        #legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+
+plot_avg_num_res_classes_US_no_leg <- ggplot(arg_count_by_roomclass_US,
+    aes(x=reorder(Species, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean number of resistance classes")
+
+plot_sp_count_byroomclass_US <- ggplot(sp_count_by_roomclass_US, 
+    aes(x=reorder(Species, -order), y=n, fill=room.class)) +
+    geom_bar(stat="identity",colour="black") +
+    #ylim(sp_count_limits) +
+    theme_classic() +
+    scale_fill_bright() +
+    theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_text(size=10),
+        plot.title=element_text(size=18, hjust = 0.5, face="bold"),
+        legend.position=c(0.8,0.8),
+        legend.title=element_text(size=18, face="bold"),
+        legend.text=element_text(size=18),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    ylab("Number of isolates")
+
+plot_grid(plot_sp_count_byroomclass_US, plot_avg_arg_count_US, plot_avg_num_res_classes_US,
+          nrow = 3, ncol = 1, rel_heights = c(3,1,2.1), align = "v")
+```
+
+#### by genus
+
+```{r}
+# average number of ARGs
+plot_avg_arg_count_gen_US <- ggplot(arg_count_by_roomclass_US_gen,
+        aes(x=reorder(Genus, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gen_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean ARGs")
+
+plot_avg_arg_count_gen_US_no_leg <- ggplot(arg_count_by_roomclass_US_gen,
+        aes(x=reorder(Genus, -order), 
+            y=room.class, 
+            fill=arg.count.mean)) +
+    geom_tile() +
+    scale_fill_YlOrBr(limits = arg_count_gradient_limits) +
+    geom_text(aes(label=stars.argcount), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean ARGs")
+
+# ARG diversity
+# add labels to this one for arranging later
+plot_avg_num_res_classes_gen_US <- ggplot(arg_count_by_roomclass_US_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_text(size=8, face = "italic", 
+                                 angle=90, hjust = 1, vjust=0.5),
+        legend.position = "bottom",
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    labs(fill="Mean number of resistance classes")
+
+plot_avg_num_res_classes_gen_US_no_leg <- ggplot(arg_count_by_roomclass_US_gen,
+    aes(x=reorder(Genus, -order), 
+        y=room.class, 
+        fill=num.res.classes.mean)) +
+    geom_tile() +
+    scale_fill_iridescent(limits = num_res_classes_gradient_limits) +
+    geom_text(aes(label=stars.num.res.classes), color="grey20", size=3, nudge_x=0.25, angle=90) +
+    theme_classic() +
+    scale_y_discrete(limits = c("ICU", "Home/work")) +
+    theme(axis.title.x=element_blank(),
+        axis.title.y=element_blank(),
+        axis.text.x=element_blank(),
+        legend.position = "none") +
+    labs(fill="Mean number of resistance classes")
+
+plot_gen_count_byroomclass_US <- ggplot(gen_count_by_roomclass_US, 
+    aes(x=reorder(Genus, -order), y=n, fill=room.class)) +
+    geom_bar(stat="identity",colour="black") +
+    #ylim(gen_count_limits) +
+    theme_classic() +
+    scale_fill_bright() +
+    theme(axis.title.x=element_blank(),
+        axis.text.x=element_blank(),
+        axis.text.y=element_text(size=10),
+        plot.title=element_text(size=18, hjust = 0.5, face="bold"),
+        legend.position=c(0.8,0.8),
+        legend.title=element_text(size=18, face="bold"),
+        legend.text=element_text(size=18),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    ylab("Number of isolates")
+
+plot_grid(plot_gen_count_byroomclass_US, plot_avg_arg_count_gen_US, plot_avg_num_res_classes_gen_US,
+          nrow = 3, ncol = 1, rel_heights = c(3,1,2.1), align = "v")
+```
+
+## export counts for supp data
+
+```{r}
+country_room_class_counts <- tax_dat %>%
+  filter(study == "This study") %>%
+  group_by(country, room.class) %>%
+  summarise(n = n(),
+            arg.count.mean = mean(arg.count), 
+            arg.count.sd = sd(arg.count), 
+            res.classes.mean = mean(num.res.classes),
+            res.classes.sd = sd(num.res.classes))
+
+publication_tax_dat <- tax_dat %>%
+  filter(study == "This study") %>%
+  select(sample, country, room.code, room.class, month, source, isolate.num, collection.date, Species, arg.count, num.res.classes)
+
+publication_genus_summary <- tax_dat %>%
+  filter(study == "This study") %>%
+  group_by(country, Genus, room.class) %>%
+  summarise(n = n(),
+            arg.count.mean = mean(arg.count), 
+            arg.count.sd = sd(arg.count), 
+            res.classes.mean = mean(num.res.classes),
+            res.classes.sd = sd(num.res.classes))
+
+publication_species_summary <- tax_dat %>%
+  filter(study == "This study") %>%
+  group_by(country, Species, room.class) %>%
+  summarise(n = n(),
+            arg.count.mean = mean(arg.count), 
+            arg.count.sd = sd(arg.count), 
+            res.classes.mean = mean(num.res.classes),
+            res.classes.sd = sd(num.res.classes))
+
+write.csv(country_room_class_counts, file = "country_room_class_counts.csv")
+
+write.csv(publication_tax_dat, file = "publication_tax_dat.csv")
+write.csv(publication_genus_summary, file = "publication_genus_summary.csv")
+write.csv(publication_species_summary, file = "publication_species_summary.csv")
+
+write.csv(wilcox_results_PAK_gen, file = "wilcox_results_PAK_gen.csv")
+write.csv(wilcox_results_PAK, file = "wilcox_results_PAK.csv")
+write.csv(wilcox_results_US_gen, file = "wilcox_results_US_gen.csv")
+write.csv(wilcox_results_US, file = "wilcox_results_US.csv")
+```
+
+
+## save plots
+
+```{r}
+# overall ARG counts
+# ggsave("species analysis/figures/isolate and ARG burden/arg_count_by_roomclass.pdf", plot_arg_count_by_room, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# ggsave("species analysis/figures/isolate and ARG burden/arg_count_by_roomclass_by_country.pdf", plot_arg_count_by_room_by_country, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# ggsave("species analysis/figures/isolate and ARG burden/arg_count_by_country_by_roomclass.pdf", plot_arg_count_by_country_by_room, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# 
+# plot_arg_count_by_room
+# plot_arg_count_by_room_by_country
+# plot_arg_count_by_country_by_room
+# 
+# # overall ARG diversity
+# ggsave("species analysis/figures/isolate and ARG burden/num_res_classes_by_roomclass.pdf", plot_num_res_classes_by_room, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# ggsave("species analysis/figures/isolate and ARG burden/num_res_classes_by_roomclass_by_country.pdf", plot_num_res_classes_by_room_by_country, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# ggsave("species analysis/figures/isolate and ARG burden/num_res_classes_by_country_by_roomclass.pdf", plot_num_res_classes_by_country_by_room, device = "pdf",
+#        units = "in", width = 6, height = 6)
+# 
+# plot_num_res_classes_by_room
+# plot_num_res_classes_by_room_by_country
+# plot_num_res_classes_by_country_by_room
+# 
+# # PAK heatmaps
+# 
+# ## by species
+# save_plot(filename="species analysis/figures/isolate and ARG burden/species_avg_arg_counts_PAK.pdf",
+#           plot_grid(plot_sp_count_byroomclass_PAK, plot_avg_arg_count_PAK, plot_avg_num_res_classes_PAK,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,2), align = "v"), 
+#           base_width = 11, base_height = 11)
+# 
+# save_plot(filename="species analysis/figures/isolate and ARG burden/species_avg_arg_counts_PAK_no_leg.pdf",
+#           plot_grid(plot_sp_count_byroomclass_PAK, plot_avg_arg_count_PAK_no_leg, plot_avg_num_res_classes_PAK_no_leg,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,1), align = "v"), 
+#           base_width = 11, base_height = 6)
+# 
+# ## by genus
+# save_plot(filename="species analysis/figures/isolate and ARG burden/genus_avg_arg_counts_PAK.pdf",
+#           plot_grid(plot_gen_count_byroomclass_PAK, plot_avg_arg_count_gen_PAK, plot_avg_num_res_classes_gen_PAK,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,2), align = "v"), 
+#           base_width = 11, base_height = 11)
+# 
+# save_plot(filename="species analysis/figures/isolate and ARG burden/genus_avg_arg_counts_PAK_no_leg.pdf",
+#           plot_grid(plot_gen_count_byroomclass_PAK, plot_avg_arg_count_gen_PAK_no_leg, plot_avg_num_res_classes_gen_PAK_no_leg,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,1), align = "v"), 
+#           base_width = 11, base_height = 6)
+# 
+# 
+# # US heatmaps
+# 
+# ## by species
+# save_plot(filename="species analysis/figures/isolate and ARG burden/species_avg_arg_counts_US.pdf",
+#           plot_grid(plot_sp_count_byroomclass_US, plot_avg_arg_count_US, plot_avg_num_res_classes_US,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,2), align = "v"), 
+#           base_width = 11, base_height = 11)
+# 
+# save_plot(filename="species analysis/figures/isolate and ARG burden/species_avg_arg_counts_US_no_leg.pdf",
+#           plot_grid(plot_sp_count_byroomclass_US, plot_avg_arg_count_US_no_leg, plot_avg_num_res_classes_US_no_leg,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,1), align = "v"), 
+#           base_width = 11, base_height = 6)
+# 
+# ## by genus
+# save_plot(filename="species analysis/figures/isolate and ARG burden/genus_avg_arg_counts_US.pdf",
+#           plot_grid(plot_gen_count_byroomclass_US, plot_avg_arg_count_gen_US, plot_avg_num_res_classes_gen_US,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,2), align = "v"), 
+#           base_width = 11, base_height = 11)
+# 
+# save_plot(filename="species analysis/figures/isolate and ARG burden/genus_avg_arg_counts_US_no_leg.pdf",
+#           plot_grid(plot_gen_count_byroomclass_US, plot_avg_arg_count_gen_US_no_leg, plot_avg_num_res_classes_gen_US_no_leg,
+#           nrow = 3, ncol = 1, rel_heights = c(3,1,1), align = "v"), 
+#           base_width = 11, base_height = 6)
+
+```
+
+
+# count isolates by collection time, building, and surface
+
+## isolates/ARGs per month
+
+```{r}
+#count isolates and ARGs per month
+samples_per_month <- tax_dat_drain %>% 
+  group_by(month, country, room.code, room.class) %>%
+  summarise(n.isolates.tmp = n(),
+            n.args.tmp = sum(arg.count)) %>%
+  ungroup() %>%
+  complete(month, room.code)
+
+# add country/room class for places that had no isolates
+samples_per_month <- samples_per_month %>% 
+  mutate(country = ifelse(grepl("PAK", room.code), "PAK", "US"),
+         room.class = ifelse(grepl("HOME|WORK", room.code), "Home/work", "ICU"))
+
+# replace NA with 0 only in places where I did a collection
+# PAK MO4 and PK4-MO1 were never received so they stay NA
+samples_per_month <- samples_per_month %>% 
+  mutate(n.isolates.tmp = ifelse(is.na(n.isolates.tmp) & country == "US", 0, n.isolates.tmp),
+         n.args.tmp = ifelse(is.na(n.args.tmp) & country == "US", 0, n.args.tmp))
+
+plot_samples_per_month_boxplot <- ggplot(samples_per_month, 
+        aes(x=factor(month), y=n.isolates.tmp, fill=country, color=country)) +
+  geom_boxplot(alpha=0.9) +
+  geom_boxplot(alpha=0, color="black", outlier.shape=NA) + # need to draw twice to color outliers
+  facet_grid(cols=vars(room.class), 
+        scales="free_y") +
+  scale_fill_manual(values = pakus_colors) +
+  scale_color_manual(values = pakus_colors) +
+  theme_bw() +
+  xlab("Study month") +
+  ylab("# isolates recovered per room") +
+  theme(axis.title.x=element_text(face="bold"),
+        strip.text.x=element_text(face="bold"),
+        strip.text.y=element_text(face="bold"))
+
+plot_samples_per_month_boxplot_2 <- ggplot(samples_per_month, 
+        aes(x=factor(month), y=n.isolates.tmp, fill=country, color=country)) +
+  geom_boxplot(alpha=0, color="black", outlier.shape=NA) +
+  geom_beeswarm(alpha=0.8, dodge.width=1, size=3, cex=2.5) +
+  #geom_quasirandom(dodge.width=0.5, size=3, cex=2.5) +
+  facet_grid(cols=vars(room.class), 
+        scales="free_y") +
+  scale_fill_manual(values = pakus_colors) +
+  scale_color_manual(values = pakus_colors) +
+  theme_bw() +
+  xlab("Study month") +
+  ylab("# isolates recovered per room") +
+  theme(axis.title.x=element_text(face="bold"),
+        strip.text.x=element_text(face="bold"),
+        strip.text.y=element_text(face="bold"))
+
+plot_samples_per_month_boxplot
+plot_samples_per_month_boxplot_2
+
+
+samples_per_month <- samples_per_month %>%
+  group_by(month, country, room.class) %>%
+  summarise(n.isolates = sum(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.avg = mean(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.sd = sd(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.max = max(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.min = min(n.isolates.tmp, na.rm = TRUE),
+            n.args = sum(n.args.tmp, na.rm = TRUE),
+            n.args.per.isolate.avg = mean(n.args.tmp/n.isolates.tmp, na.rm = TRUE),
+            n.args.per.isolate.sd = sd(n.args.tmp/n.isolates.tmp, na.rm = TRUE))
+
+plot_samples_per_month <- ggplot(samples_per_month, aes(x=month, y=n.isolates.avg, fill=country)) +
+  geom_bar(position="dodge", stat="identity", color="black") +
+  geom_errorbar(aes(ymin=n.isolates.min, 
+                    ymax=n.isolates.max),
+                position=position_dodge(.9),
+                width=0.2) +
+  facet_grid(cols=vars(room.class), 
+             scales="free_y") +
+    scale_fill_manual(values = pakus_colors) +
+    theme_bw() +
+    xlab("Study month") +
+    ylab("Mean # isolates recovered per room") +
+    theme(axis.title.x=element_text(face="bold"),
+          strip.text.x=element_text(face="bold"),
+          strip.text.y=element_text(face="bold"))
+
+plot_samples_per_month
+```
+
+## isolates/ARGs per surface
+
+```{r}
+#count isolates and ARGs per surface
+samples_per_surface <- tax_dat_drain %>% 
+  group_by(month, country, room.code, room.class, source) %>%
+  summarise(n.isolates.tmp = n(),
+            n.args.tmp = sum(arg.count)) %>%
+  ungroup() %>%
+  complete(month, source, room.code)
+
+# add country/room class for places that had no isolates
+samples_per_surface <- samples_per_surface %>% 
+  mutate(country = ifelse(grepl("PAK", room.code), "PAK", "US"),
+         room.class = ifelse(grepl("HOME|WORK", room.code), "Home/work", "ICU"))
+
+# replace all NAs with zero, then add back NA for rows where there wasn't a collection
+samples_per_surface[is.na(samples_per_surface)] <- 0
+
+# PAK MO4 and PK4-MO1 were never received so they are NA
+samples_per_surface <- samples_per_surface %>% 
+  mutate(n.isolates.tmp = ifelse(country == "PAK" & month == 4, NA, n.isolates.tmp),
+         n.args.tmp = ifelse(country == "PAK" & month == 4, NA, n.args.tmp),
+         n.isolates.tmp = ifelse(room.code == "PAK-ICU-4" & month == 1, NA, n.isolates.tmp),
+         n.args.tmp = ifelse(room.code == "PAK-ICU-4" & month == 1, NA, n.args.tmp))
+
+plot_samples_per_surface_boxplot <- ggplot(samples_per_surface, 
+        aes(x=factor(source), y=n.isolates.tmp, fill=country, color=country)) +
+  geom_boxplot(alpha=0.9) +
+  geom_boxplot(alpha=0, color="black", outlier.shape=NA) + # need to draw twice to color outliers
+  facet_grid(cols=vars(room.class), 
+        scales="free_y") +
+  scale_fill_manual(values = pakus_colors) +
+  scale_color_manual(values = pakus_colors) +
+  xlab("Surface") +
+  ylab("# isolates recovered per room per collection") +
+  scale_x_discrete(limits=c("B", "D", "F",
+                            "FC","2min"),
+                   labels=c("Sink basin", "Drain", "Faucet",
+                            "Water (initial flow)", "Water (2 min flow)")) +
+    theme_bw() +
+    theme(axis.title.x=element_text(face="bold"),
+          axis.text.x=element_text(angle = 45, hjust = 1),
+          strip.text.x=element_text(face="bold"),
+          strip.text.y=element_text(face="bold"))
+
+plot_samples_per_surface_boxplot_2 <- ggplot(samples_per_surface, 
+        aes(x=factor(source), y=n.isolates.tmp, fill=country, color=country)) +
+  geom_quasirandom(alpha=0.7, dodge.width=0.75, size=3) +
+  geom_boxplot(alpha=0, color="black", outlier.shape=NA) +
+  facet_grid(cols=vars(room.class), 
+        scales="free_y") +
+  scale_fill_manual(values = pakus_colors) +
+  scale_color_manual(values = pakus_colors) +
+  xlab("Surface") +
+  ylab("# isolates recovered per room per collection") +
+  scale_x_discrete(limits=c("B", "D", "F",
+                            "FC","2min"),
+                   labels=c("Sink basin", "Drain", "Faucet",
+                            "Water\n(initial flow)", "Water\n(2 min flow)")) +
+    theme_bw() +
+    theme(axis.title.x=element_text(face="bold"),
+          #axis.text.x=element_text(angle = 90, hjust = 1),
+          strip.text.x=element_text(face="bold"),
+          strip.text.y=element_text(face="bold"))
+
+samples_per_surface <- samples_per_surface %>%
+  group_by(source, country, room.class) %>%
+  summarise(n.isolates = sum(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.avg = mean(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.sd = sd(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.max = max(n.isolates.tmp, na.rm = TRUE),
+            n.isolates.min = min(n.isolates.tmp, na.rm = TRUE),
+            n.args = sum(n.args.tmp, na.rm = TRUE),
+            n.args.per.isolate.avg = mean(n.args.tmp/n.isolates.tmp, na.rm = TRUE),
+            n.args.per.isolate.sd = sd(n.args.tmp/n.isolates.tmp, na.rm = TRUE))
+
+plot_samples_per_surface <- ggplot(samples_per_surface, aes(x=source, y=n.isolates.avg, fill=country)) +
+  geom_bar(position="dodge", stat="identity", color="black") +
+  geom_errorbar(aes(ymin=n.isolates.min, 
+                    ymax=n.isolates.max),
+                position=position_dodge(.9),
+                width=0.2) +
+  facet_grid(cols=vars(room.class), 
+             scales="free_y") +
+  scale_fill_manual(values = pakus_colors) +
+  xlab("Surface") +
+  ylab("# isolates recovered per room per collection") +
+  scale_x_discrete(limits=c("B", "D", "F",
+                            "FC","2min"),
+                   labels=c("Sink basin", "Drain", "Faucet",
+                            "Water (initial flow)", "Water (2 min flow)")) +
+    theme_bw() +
+    theme(axis.title.x=element_text(face="bold"),
+          axis.text.x=element_text(angle = 45, hjust = 1),
+          strip.text.x=element_text(face="bold"),
+          strip.text.y=element_text(face="bold"))
+
+plot_samples_per_surface_boxplot
+plot_samples_per_surface_boxplot_2
+plot_samples_per_surface
+
+```
+
+
+
+
+## save plots
+
+```{r}
+# ggsave("species analysis/figures/isolate and ARG burden/samples_per_month_boxplot.pdf", 
+#        plot_samples_per_month_boxplot, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# ggsave("figures/isolate and ARG burden/samples_per_month_boxplot_2.pdf", 
+#        plot_samples_per_month_boxplot_2, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# 
+# ggsave("species analysis/figures/isolate and ARG burden/samples_per_month.pdf", 
+#        plot_samples_per_month, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# 
+# ggsave("figures/isolate and ARG burden/samples_per_surface_boxplot.pdf", 
+#        plot_samples_per_surface_boxplot, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# ggsave("figures/isolate and ARG burden/samples_per_surface_boxplot_2.pdf", 
+#        plot_samples_per_surface_boxplot_2, device = "pdf",
+#        units = "in", width = 10, height = 5)
+# 
+# 
+# ggsave("species analysis/figures/isolate and ARG burden/samples_per_surface.pdf", 
+#        plot_samples_per_surface, device = "pdf",
+#        units = "in", width = 10, height = 5)
+```
+
+
+# make presence/absence matrix for P stutzeri bla genes
+
+```{r}
+p_stutzeri_args <- subset(
+  merge(arg_dat, tax_dat, by = "sample"),
+  Species == "Pseudomonas stutzeri"
+  )
+
+p_stuteri_blas <- subset(p_stutzeri_args, Class.x == "BETA-LACTAM")
+
+p_stuteri_blas$gene.id <- paste0(p_stuteri_blas$Gene.symbol, ", ", p_stuteri_blas$Accession.of.closest.sequence)
+
+p_stuteri_blas_pres_absence <- dcast(p_stuteri_blas, sample~gene.id, length)
+
+# p_stuteri_blas_pres_absence$itol.out <- do.call(paste,
+#     c(p_stuteri_blas_pres_absence[1:ncol(p_stuteri_blas_pres_absence)], sep = ","))
+
+write_csv(p_stuteri_blas_pres_absence, 
+          file="p_stuteri_blas_pres_absence.csv",
+          quote = "none")
+
+```
+

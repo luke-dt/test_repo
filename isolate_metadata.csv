@@ -1,0 +1,862 @@
+﻿pakus.code,sample,Species,Genus,Family,Order,Class,Phylum,country,room,room.code,month,collection.date,source,isolate.num
+NA,PK-Pub2-MO2-B1,Achromobacter animicus,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,B,1
+NA,US-ICU17-MO2-D1,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,2,20180409,D,1
+NA,US-ICU17-MO3-D1,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,3,20180514,D,1
+NA,US-ICU17-MO5-D1,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,5,20180709,D,1
+NA,US-ICU21-MO1-D4,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,D,4
+NA,PK-Pub1-MO1-B2,Achromobacter mucicolens,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,B,2
+NA,PK-Pub1-MO3-D3,Achromobacter mucicolens,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,D,3
+NA,US-IOH-MO1-D5,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,5
+NA,US-IOH-MO2-F1,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,F,1
+NA,US-IOH-MO3-D1,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,D,1
+NA,US-IOH-MO5-D6,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,6
+NA,PK-Pub2-MO4-B1,Achromobacter mucicolens,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,B,1
+NA,PK3-MO3-ICU-F3,Achromobacter sp. ICU-F3,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,F,3
+NA,US-HM2-MO3-B1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,B,1
+NA,US-HM1-MO2-D1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,2,20180409,D,1
+NA,US-HM2-MO5-D3,Acinetobacter pittii ,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,5,20180709,D,3
+NA,US-HM1-MO1-D4,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,D,4
+NA,US-HM2-MO1-D2,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,1,20180220,D,2
+NA,US-HM2-MO1-D4,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,1,20180220,D,4
+NA,US-HM2-MO2-D1,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,2,20180409,D,1
+NA,US-HM2-MO4-D1,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,4,20180604,D,1
+NA,US-HM1-MO3-D2,Acinetobacter sp. HM1-D4,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,D,2
+NA,US-HM2-MO4-D2,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,4,20180604,D,2
+NA,PK-Prv2-MO2-B2,Achromobacter spanius,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,2,20180402,B,2
+NA,US-HM2-MO5-D1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,5,20180709,D,1
+NA,PK-Prv2-MO3-Air2,Achromobacter xylosoxidans,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,Air,2
+NA,PK2-MO4-ICU-Air2,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,Air,2
+NA,PK3-MO2-ICU-B5,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,5
+NA,PK3-MO3-ICU-B2,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,B,2
+NA,US-HM2-MO5-F1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,5,20180709,F,1
+NA,PK3-MO3-ICU-B3,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,B,3
+NA,PK4-MO3-ICU-B1,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,B,1
+NA,US-HM2-MO3-D1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,D,1
+NA,PK2-MO1-ICU-D8,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,8
+NA,US-MK-MO1-B3,Pantoea sp. PUB1-B3,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,3
+NA,US-HM1-MO4-D3,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,D,3
+NA,PK2-MO3-ICU-F2,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,F,2
+NA,PK3-MO1-ICU-B3,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,B,3
+NA,PK3-MO1-ICU-F5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,F,5
+NA,PK-Prv2-MO1-D2,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,D,2
+NA,PK-Prv2-MO2-D1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,2,20180402,D,1
+NA,PK-Prv2-MO3-D3,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,3
+NA,US-HM1-MO3-B1,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,B,1
+NA,PK-Pub1-MO1-B4,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,B,4
+NA,PK-Pub1-MO1-D3,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,D,3
+NA,PK-Pub1-MO1-F1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,F,1
+NA,PK-Pub1-MO2-D1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,D,1
+NA,PK-Pub2-MO1-B3,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,B,3
+NA,PK-Pub2-MO1-D1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,1
+NA,PK3-MO1-ICU-B5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,B,5
+NA,PK3-MO2-ICU-D8,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,8
+NA,PK4-MO2-ICU-F2,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,F,2
+NA,PK4-MO3-ICU-B5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,B,5
+NA,PK-Pub1-MO1-FC1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,FC,1
+NA,PK2-MO1-ICU-2min1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,2min,1
+NA,US-HM1-MO3-D1,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,D,1
+NA,US-HM2-MO1-D5,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,1,20180220,D,5
+NA,US-HM2-MO2-D2,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,2,20180409,D,2
+NA,US-HM1-MO1-D1,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,D,1
+NA,US-HM1-MO1-F1,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,F,1
+NA,US-HM1-MO1-F2,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,F,2
+NA,US-HM2-MO3-F1,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,F,1
+NA,PK1-MO2-ICU-FC1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,FC,1
+NA,PK1-MO3-ICU-FC1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,FC,1
+NA,PK3-MO2-ICU-B2,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,2
+NA,PK-Prv2-MO2-F1,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,2,20180402,F,1
+NA,US-ICU18-MO1-D3,Pseudomonas sp. ICU-D3,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU18,US-ICU-2,1,20180220,D,3
+NA,US-IOH-MO5-B3,Pseudomonas sp. PUB2-B3,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,B,3
+NA,PK-Pub1-MO2-B1,Acinetobacter pittii ,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,B,1
+NA,PK1-MO1-ICU-B4,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,4
+NA,US-ICU21-MO1-D1,Stenotrophomonas sp. ICU21-D1,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,D,1
+NA,PK1-MO1-ICU-F3,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,F,3
+NA,PK1-MO2-ICU-B5,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,5
+NA,PK1-MO2-ICU-D3,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,D,3
+NA,PK1-MO4-ICU-B5,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,B,5
+NA,US-IOH-MO4-B3,Stenotrophomonas sp. PRV1-D4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,B,3
+NA,US-IOH-MO5-D4,Stenotrophomonas sp. PRV1-D4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,4
+NA,PK-Prv1-MO4-B2,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,B,2
+NA,US-MK-MO1-D4,Stenotrophomonas sp. PRV2-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,4
+NA,PK-Prv2-MO3-D2,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,2
+NA,US-ICU21-MO2-D2,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,2,20180409,D,2
+NA,US-ICU21-MO3-D2,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,3,20180514,D,2
+NA,US-ICU21-MO4-D2,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,4,20180604,D,2
+NA,US-ICU21-MO5-D1,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,5,20180709,D,1
+NA,US-MK-MO3-B3,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,3
+NA,PK-Pub1-MO4-B2,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,B,2
+NA,US-HM1-MO2-D2,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,2,20180409,D,2
+NA,PK1-MO4-ICU-D4,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,D,4
+NA,US-IOH-MO3-B3,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,B,3
+NA,PK2-MO1-ICU-B2,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,B,2
+NA,PK2-MO2-ICU-B2,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,B,2
+NA,PK3-MO2-ICU-D3,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,3
+NA,US-HM1-MO2-FC1,Agrobacterium sp. HM1-D1,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,2,20180409,FC,1
+NA,PK3-MO3-ICU-D5,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,5
+NA,PK3-MO4-ICU-B1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,B,1
+NA,US-MK-MO1-B6,Achromobacter marplatensis,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,6
+NA,PK3-MO4-ICU-F1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,F,1
+NA,PK2-MO1-ICU-D1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,1
+NA,US-MK-MO3-B5,Achromobacter xylosoxidans,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,5
+NA,US-MK-MO3-D2,Achromobacter xylosoxidans,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,D,2
+NA,PK2-MO1-ICU-F1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,F,1
+NA,PK2-MO1-ICU-F3,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,F,3
+NA,PK2-MO4-ICU-F1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,F,1
+NA,PK3-MO1-ICU-D6,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,6
+NA,PK3-MO2-ICU-B1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,1
+NA,US-MK-MO2-D1,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,2,20180409,D,1
+NA,US-MK-MO5-B2,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,B,2
+NA,US-MK-MO5-D4,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,4
+NA,US-MK-MO3-B2,Acinetobacter courvalinii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,2
+NA,PK4-MO4-ICU-F1,Aeromonas caviae,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,F,1
+NA,PK-Prv1-MO4-B3,Aeromonas dhakensis,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,B,3
+NA,PK-Prv1-MO4-F1,Aeromonas dhakensis,Aeromonas,Aeromonadaceae,Aeromonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,F,1
+NA,PK-Prv1-MO3-B1,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,B,1
+NA,PK-Pub1-MO4-D1,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,D,1
+NA,PK1-MO1-ICU-D2,Arcobacter butzleri,Arcobacter,Campylobacteraceae,Campylobacterales,Epsilonproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,2
+NA,PK1-MO3-ICU-Air6,Arcobacter butzleri,Arcobacter,Campylobacteraceae,Campylobacterales,Epsilonproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,6
+NA,PK-Pub1-MO3-Air1,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,Air,1
+NA,PK4-MO4-ICU-F3,Brucella anthropi,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,F,3
+NA,PK-Pub1-MO4-B5,Brucella intermedia,Brucella,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,B,5
+NA,PK-Prv1-MO4-Air2,Chromobacterium haemolyticum,Chromobacterium,Neisseriaceae,Neisseriales,Betaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,Air,2
+NA,PK-Prv1-MO4-D1,Chromobacterium haemolyticum,Chromobacterium,Neisseriaceae,Neisseriales,Betaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,D,1
+NA,PK1-MO3-ICU-Air2,Citrobacter amalonaticus,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,2
+NA,PK3-MO2-ICU-B3,Citrobacter braakii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,3
+NA,PK3-MO2-ICU-F4,Citrobacter braakii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,F,4
+NA,PK1-MO1-ICU-D4,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,4
+NA,PK1-MO2-ICU-D2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,D,2
+NA,US-HM1-MO4-B1,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,B,1
+NA,US-ICU18-MO1-D1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU18,US-ICU-2,1,20180220,D,1
+NA,US-ICU18-MO1-D4,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU18,US-ICU-2,1,20180220,D,4
+NA,US-IOH-MO2-B2,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,B,2
+NA,US-IOH-MO2-D1,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,D,1
+NA,US-IOH-MO2-D4,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,D,4
+NA,US-IOH-MO5-B5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,B,5
+NA,US-IOH-MO5-D5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,5
+NA,US-MK-MO1-B5,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,5
+NA,PK1-MO3-ICU-B4,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,4
+NA,US-MK-MO4-D4,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,4
+NA,PK1-MO4-ICU-D2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,D,2
+NA,PK2-MO2-ICU-D2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,D,2
+NA,PK-Prv2-MO3-Air3,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,Air,3
+NA,PK-Prv2-MO3-D5,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,5
+NA,US-HM2-MO3-B2,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,B,2
+NA,PK2-MO3-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,D,1
+NA,US-HM1-MO4-D2,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,D,2
+NA,US-HM1-MO1-D3,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,D,3
+NA,US-HM2-MO1-D1,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,US,HM2,US-HOME-2,1,20180220,D,1
+NA,US-HM1-MO4-D5,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,D,5
+NA,US-IOH-MO1-B1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,B,1
+NA,US-IOH-MO1-B3,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,B,3
+NA,US-IOH-MO1-D4,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,4
+NA,US-IOH-MO3-B1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,B,1
+NA,US-IOH-MO4-B1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,B,1
+NA,US-IOH-MO5-B4,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,B,4
+NA,US-IOH-MO5-D3,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,3
+NA,US-MK-MO1-B1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,1
+NA,US-MK-MO1-B2,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,2
+NA,US-MK-MO1-D7,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,7
+NA,US-MK-MO2-D2,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,2,20180409,D,2
+NA,US-MK-MO4-D1,Acinetobacter ursingii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,1
+NA,PK2-MO4-ICU-D4,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,D,4
+NA,PK1-MO2-ICU-F1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,F,1
+NA,PK1-MO3-ICU-Air3,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,3
+NA,PK3-MO1-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,1
+NA,PK1-MO3-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,D,1
+NA,PK1-MO3-ICU-F1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,F,1
+NA,PK3-MO1-ICU-D4,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,4
+NA,PK3-MO2-ICU-F2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,F,2
+NA,PK2-MO3-ICU-B1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,B,1
+NA,PK2-MO4-ICU-B7,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,7
+NA,PK2-MO4-ICU-D3,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,D,3
+NA,PK3-MO2-ICU-D2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,2
+NA,PK4-MO2-ICU-Air2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,Air,2
+NA,PK4-MO2-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,D,1
+NA,PK4-MO3-ICU-Air1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,Air,1
+NA,PK4-MO3-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,D,1
+NA,PK4-MO4-ICU-B2,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,B,2
+NA,PK4-MO4-ICU-D1,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,D,1
+NA,PK2-MO2-ICU-Air2,Citrobacter portucalensis,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,Air,2
+NA,PK3-MO2-ICU-D6,Citrobacter portucalensis,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,6
+NA,PK3-MO1-ICU-B2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,B,2
+NA,PK3-MO2-ICU-F3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,F,3
+NA,US-HM1-MO5-D2,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,5,20180709,D,2
+NA,US-HM2-MO5-D2,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,5,20180709,D,2
+NA,PK-Prv2-MO3-Air1,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,Air,1
+NA,PK-Prv2-MO3-D1,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,1
+NA,PK-Pub2-MO1-D2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,2
+NA,PK-Pub2-MO1-D4,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,4
+NA,US-HM2-MO4-D3,Klebsiella oxytoca,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,4,20180604,D,3
+NA,US-HM2-MO2-D4,Mitsuaria sp. HM2-D4,Mitsuaria,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,2,20180409,D,4
+NA,US-HM1-MO3-D3,Pantoea brenneri,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,D,3
+NA,US-HM1-MO1-D2,Pigmentiphaga sp. HM1-D2,Pigmentiphaga,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,1,20180220,D,2
+NA,US-ICU20-MO2-D2,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,ICU20,US-ICU-3,2,20180409,D,2
+NA,US-IOH-MO1-B4,Agrobacterium pusense,Agrobacterium,Rhizobiaceae,Rhizobiales,Alphaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,B,4
+NA,PK1-MO1-ICU-B3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,3
+NA,PK1-MO1-ICU-F2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,F,2
+NA,PK1-MO2-ICU-B2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,2
+NA,PK2-MO1-ICU-F2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,F,2
+NA,PK2-MO2-ICU-D3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,D,3
+NA,PK2-MO4-ICU-F3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,F,3
+NA,PK3-MO1-ICU-F2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,F,2
+NA,PK3-MO1-ICU-F3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,F,3
+NA,PK3-MO2-ICU-B6,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,6
+NA,PK3-MO3-ICU-Air3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,Air,3
+NA,PK3-MO3-ICU-D2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,2
+NA,PK3-MO4-ICU-B2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,B,2
+NA,PK3-MO4-ICU-F2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,F,2
+NA,PK4-MO4-ICU-B3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,B,3
+NA,PK4-MO4-ICU-D3,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,D,3
+NA,PK4-MO4-ICU-F2,Comamonas aquatica,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,F,2
+NA,PK-Pub1-MO1-D1,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,D,1
+NA,PK-Pub2-MO1-B2,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,B,2
+NA,PK4-MO3-ICU-Air2,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,Air,2
+NA,PK4-MO3-ICU-D2,Comamonas terrigena,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,D,2
+NA,PK2-MO1-ICU-D6,Comamonas thiooxydans,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,6
+NA,PK3-MO2-ICU-D4,Comamonas thiooxydans,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,4
+NA,PK3-MO3-ICU-F2,Comamonas thiooxydans,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,F,2
+NA,PK4-MO2-ICU-B2,Comamonas thiooxydans,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,B,2
+NA,PK4-MO2-ICU-F1,Comamonas thiooxydans,Comamonas,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,F,1
+NA,PK3-MO3-ICU-D4,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,4
+NA,PK1-MO3-ICU-B5,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,5
+NA,PK2-MO1-ICU-D7,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,7
+NA,PK3-MO2-ICU-B4,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,B,4
+NA,PK3-MO3-ICU-Air4,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,Air,4
+NA,PK3-MO4-ICU-D4,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,D,4
+NA,US-MK-MO2-D3,Citrobacter freundii,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,2,20180409,D,3
+NA,PK-Pub2-MO2-D1,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,Pub2,PAK-WORK-2,2,20180402,D,1
+NA,PK-Pub2-MO2-D5,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,Pub2,PAK-WORK-2,2,20180402,D,5
+NA,US-IOH-MO4-D2,Citrobacter portucalensis,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,D,2
+NA,PK2-MO2-ICU-B3,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,ICU2,PAK-ICU-2,2,20180402,B,3
+NA,PK3-MO1-ICU-F6,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,ICU3,PAK-ICU-3,1,20180227,F,6
+NA,PK-Pub1-MO4-B3,Enterobacter bugandensis,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,B,3
+NA,PK-Pub1-MO4-B4,Enterobacter bugandensis,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,B,4
+NA,PK-Pub1-MO4-F2,Enterobacter bugandensis,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,F,2
+NA,PK4-MO3-ICU-B3,Enterobacter bugandensis,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,B,3
+NA,PK3-MO4-ICU-D3,Enterobacter cloacae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,D,3
+NA,PK-Prv1-MO4-D2,Enterobacter cloacae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,D,2
+NA,PK-Prv2-MO3-F2,Enterobacter cloacae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,F,2
+NA,PK2-MO1-ICU-D2,Enterobacter cloacae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,2
+NA,PK1-MO3-ICU-B1,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,1
+NA,PK4-MO2-ICU-B1,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,B,1
+NA,PK-Pub2-MO2-F1,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,F,1
+NA,PK-Pub2-MO2-F3,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,F,3
+NA,PK1-MO1-ICU-B1,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,1
+NA,PK1-MO1-ICU-B5,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,5
+NA,PK1-MO1-ICU-F1,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,F,1
+NA,PK1-MO4-ICU-F1,Enterobacter kobei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,F,1
+NA,PK-Prv2-MO1-F2,Enterobacter ludwigii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,F,2
+NA,PK1-MO2-ICU-B1,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,1
+NA,PK-Pub2-MO3-Air2,Enterobacter sp. PUB2-D2,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,Air,2
+NA,PK-Pub2-MO3-D2,Enterobacter sp. PUB2-D2,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,D,2
+NA,PK1-MO2-ICU-B6,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,6
+NA,PK1-MO3-ICU-B2,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,2
+NA,PK2-MO4-ICU-D2,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,D,2
+NA,PK1-MO3-ICU-Air5,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,5
+NA,US-HM2-MO3-D2,Pseudomonas alcaligenes,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,D,2
+NA,US-HM1-MO4-D1,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,D,1
+NA,US-HM2-MO3-D3,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,3,20180514,D,3
+NA,PK1-MO4-ICU-B1,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,B,1
+NA,PK1-MO4-ICU-D1,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,D,1
+NA,PK2-MO4-ICU-B2,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,2
+NA,PK3-MO1-ICU-F4,Klebsiella aerogenes,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,F,4
+NA,PK1-MO2-ICU-D4,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,D,4
+NA,PK2-MO3-ICU-D3,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,D,3
+NA,PK3-MO2-ICU-F5,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,F,5
+NA,PK1-MO1-ICU-D3,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,3
+NA,PK1-MO2-ICU-B4,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,4
+NA,PK1-MO3-ICU-D4,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,D,4
+NA,PK1-MO4-ICU-B2,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,B,2
+NA,US-HM2-MO4-D5,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,4,20180604,D,5
+NA,US-ICU17-MO2-D2,Delftia tsuruhatensis,Delftia,Comamonadaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,2,20180409,D,2
+NA,PK2-MO2-ICU-D5,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,D,5
+NA,PK3-MO3-ICU-Air1,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,Air,1
+NA,PK3-MO3-ICU-D1,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,1
+NA,PK4-MO2-ICU-D3,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,D,3
+NA,PK1-MO4-ICU-D3,Klebsiella pasteurii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,D,3
+NA,PK1-MO2-ICU-D1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,D,1
+NA,PK2-MO1-ICU-B1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,B,1
+NA,PK2-MO2-ICU-D1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,D,1
+NA,PK2-MO2-ICU-F1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,F,1
+NA,PK2-MO3-ICU-B2,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,B,2
+NA,PK-Pub2-MO4-D2,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,D,2
+NA,PK2-MO4-ICU-B1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,1
+NA,US-HM1-MO5-D1,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,5,20180709,D,1
+NA,US-HM1-MO3-D5,Pseudomonas nitroreducens,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,D,5
+NA,PK2-MO4-ICU-B6,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,6
+NA,PK2-MO2-ICU-Air3,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,Air,3
+NA,US-IOH-MO5-D2,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,2
+NA,US-MK-MO3-B4,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,4
+NA,US-MK-MO3-D3,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,D,3
+NA,US-MK-MO4-D2,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,2
+NA,US-MK-MO5-D1,Enterobacter roggenkampii,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,1
+NA,PK2-MO2-ICU-B1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,B,1
+NA,PK3-MO2-ICU-F1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,F,1
+NA,PK3-MO2-ICU-D1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,1
+NA,PK3-MO4-ICU-B4,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,B,4
+NA,PK4-MO4-ICU-B1,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,B,1
+NA,PK1-MO1-ICU-D5,Klebsiella quasipneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,5
+NA,PK-Pub2-MO4-D5,Leclercia adecarboxylata,Leclercia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,D,5
+NA,US-HM2-MO1-D3,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,1,20180220,D,3
+NA,PK-Prv1-MO4-B1,Morganella sp. PRV1-B1,Morganella,Morganellaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,B,1
+NA,US-IOH-MO5-B2,Klebsiella grimontii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,B,2
+NA,US-MK-MO1-D1,Klebsiella grimontii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,1
+NA,US-MK-MO2-D4,Klebsiella grimontii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,2,20180409,D,4
+NA,US-MK-MO4-D3,Klebsiella grimontii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,3
+NA,US-MK-MO5-B4,Klebsiella grimontii,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,B,4
+NA,PK-Prv1-MO3-Air1,Pantoea agglomerans,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,Air,1
+NA,PK-Pub1-MO3-D2,Pantoea agglomerans,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,D,2
+NA,PK-Pub2-MO4-F2,Pantoea ananatis,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,F,2
+NA,PK-Prv2-MO4-2min1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,2min,1
+NA,PK-Pub1-MO4-2min1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,2min,1
+NA,PK-Prv1-MO2-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,D,2
+NA,PK-Prv2-MO3-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,B,3
+NA,PK-Prv2-MO3-D4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,4
+NA,PK-Prv2-MO3-F3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,F,3
+NA,PK-Pub2-MO4-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,D,3
+NA,PK1-MO1-ICU-D7,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,7
+NA,US-IOH-MO2-B1,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,B,1
+NA,US-IOH-MO2-D3,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,D,3
+NA,US-IOH-MO3-B2,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,B,2
+NA,US-IOH-MO4-B2,Klebsiella michiganensis,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,B,2
+NA,US-HM1-MO2-B1,Pseudomonas sp. HM1-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,2,20180409,B,1
+NA,PK1-MO3-ICU-Air4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,4
+NA,PK1-MO3-ICU-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,3
+NA,PK1-MO3-ICU-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,D,3
+NA,PK1-MO3-ICU-F2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,F,2
+NA,PK1-MO4-ICU-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,B,3
+NA,PK1-MO4-ICU-F3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,F,3
+NA,PK2-MO1-ICU-D5,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,5
+NA,PK2-MO2-ICU-Air1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,Air,1
+NA,PK2-MO2-ICU-D4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,D,4
+NA,PK2-MO3-ICU-B4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,B,4
+NA,PK2-MO3-ICU-B5,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,B,5
+NA,PK2-MO3-ICU-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,D,2
+NA,PK2-MO4-ICU-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,3
+NA,PK2-MO4-ICU-B5,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,5
+NA,US-IOH-MO4-D3,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,D,3
+NA,PK2-MO4-ICU-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,D,1
+NA,PK3-MO1-ICU-B1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,B,1
+NA,PK3-MO1-ICU-B4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,B,4
+NA,PK3-MO1-ICU-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,2
+NA,PK3-MO2-ICU-D5,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,5
+NA,US-HM1-MO3-D4,Pseudomonas sp. HM1-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,3,20180514,D,4
+NA,US-IOH-MO1-B2,Pantoea brenneri,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,B,2
+NA,PK3-MO3-ICU-Air2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,Air,2
+NA,PK3-MO3-ICU-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,3
+NA,PK3-MO3-ICU-D6,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,D,6
+NA,PK3-MO4-ICU-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,B,3
+NA,PK3-MO4-ICU-F4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,F,4
+NA,PK4-MO2-ICU-Air1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,Air,1
+NA,PK4-MO2-ICU-B4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,B,4
+NA,PK4-MO2-ICU-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,D,2
+NA,PK4-MO3-ICU-Air3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,Air,3
+NA,PK4-MO3-ICU-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,D,3
+NA,PK4-MO4-ICU-B4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,B,4
+NA,PK4-MO4-ICU-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,D,2
+NA,PK4-MO4-ICU-D4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,D,4
+NA,PK-Prv2-MO4-D3,Pseudomonas alcaligenes,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,D,3
+NA,PK-Pub1-MO4-B1,Pseudomonas asiatica,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,B,1
+NA,PK-Prv1-MO3-B3,Pseudomonas atacamensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,B,3
+NA,PK-Prv2-MO1-B3,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,B,3
+NA,PK-Pub1-MO1-B3,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,B,3
+NA,PK-Pub1-MO1-D2,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,D,2
+NA,PK-Pub1-MO2-Air2,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,Air,2
+NA,PK-Pub1-MO2-D2,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,D,2
+NA,PK-Pub1-MO3-B2,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,B,2
+NA,PK-Pub2-MO1-D3,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,3
+NA,PK-Pub2-MO1-D6,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,6
+NA,PK-Pub2-MO3-Air3,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,Air,3
+NA,PK2-MO2-ICU-F2,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,2,20180402,F,2
+NA,PK3-MO1-ICU-F1,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,F,1
+NA,PK3-MO3-ICU-B1,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,B,1
+NA,PK4-MO3-ICU-F1,Pseudomonas chengduensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,F,1
+NA,PK-Pub1-MO2-B2,Pseudomonas fulva,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,B,2
+NA,PK4-MO3-ICU-B2,Pseudomonas fulva,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,B,2
+NA,PK1-MO3-ICU-B6,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,B,6
+NA,PK-Pub1-MO1-B1,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,B,1
+NA,PK1-MO2-ICU-F2,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,F,2
+NA,PK-Prv1-MO1-F1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,F,1
+NA,PK-Prv1-MO2-F2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,F,2
+NA,PK-Prv1-MO3-F2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,F,2
+NA,PK-Prv2-MO1-F1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,F,1
+NA,PK-Pub1-MO1-F2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,F,2
+NA,PK-Pub1-MO1-F3,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,F,3
+NA,US-ICU17-MO3-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,3,20180514,D,2
+NA,US-ICU17-MO3-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,3,20180514,D,3
+NA,US-ICU17-MO5-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,5,20180709,D,2
+NA,US-ICU17-MO5-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU17,US-ICU-1,5,20180709,D,3
+NA,US-ICU18-MO1-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU18,US-ICU-2,1,20180220,D,2
+NA,US-ICU18-MO4-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU18,US-ICU-2,4,20180604,D,1
+NA,US-ICU20-MO2-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU20,US-ICU-3,2,20180409,D,1
+NA,US-ICU21-MO1-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,D,2
+NA,US-ICU21-MO1-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,D,3
+NA,US-ICU21-MO2-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,2,20180409,D,1
+NA,US-ICU21-MO3-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,3,20180514,D,1
+NA,US-ICU21-MO4-D3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,4,20180604,D,3
+NA,US-ICU21-MO5-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,5,20180709,D,2
+NA,US-IOH-MO1-D1,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,1
+NA,US-IOH-MO1-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,2
+NA,US-MK-MO1-D2,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,2
+NA,US-MK-MO3-B6,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,6
+NA,US-MK-MO3-D4,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,D,4
+NA,US-MK-MO4-D6,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,6
+NA,US-MK-MO5-B3,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,B,3
+NA,PK-Pub1-MO2-F1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,F,1
+NA,US-HM2-MO2-D3,Pseudomonas sp. HM1-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,2,20180409,D,3
+NA,US-IOH-MO2-F2,Pseudomonas carnis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,F,2
+NA,PK-Pub1-MO3-B1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,B,1
+NA,PK-Pub1-MO3-F2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,F,2
+NA,US-MK-MO3-B1,Pseudomonas fulva,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,B,1
+NA,PK-Pub2-MO1-F1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,F,1
+NA,PK-Pub2-MO3-B2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,B,2
+NA,PK-Pub2-MO3-D1,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,D,1
+NA,US-HM1-MO4-B2,Pseudomonas sp. HM1-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,B,2
+NA,US-HM1-MO5-B1,Pseudomonas sp. HM1-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,5,20180709,B,1
+NA,US-HM1-MO4-D4,Pseudomonas sp. HM1-D3,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,4,20180604,D,4
+NA,US-HM1-MO5-D3,Pseudomonas sp. HM1-D3,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,5,20180709,D,3
+NA,US-IOH-MO5-D1,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,D,1
+NA,US-MK-MO1-D5,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,5
+NA,US-MK-MO5-B1,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,B,1
+NA,US-MK-MO5-D3,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,3
+NA,US-ICU21-MO4-D1,Pseudomonas monteilii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,4,20180604,D,1
+NA,PK-Pub2-MO3-F2,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,F,2
+NA,PK1-MO2-ICU-B3,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,B,3
+NA,PK2-MO1-ICU-B3,Pseudomonas mosselii,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,B,3
+NA,PK1-MO1-ICU-B2,Pseudomonas nicosulfuronedens,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,2
+NA,PK1-MO1-ICU-B7,Pseudomonas nicosulfuronedens,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,7
+NA,PK2-MO3-ICU-B3,Pseudomonas nicosulfuronedens,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,B,3
+NA,PK4-MO4-ICU-F4,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,4,20180718,F,4
+NA,PK2-MO1-ICU-2min2,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,2min,2
+NA,PK2-MO1-ICU-2min3,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,2min,3
+NA,PK-Prv1-MO4-B4,Pseudomonas otitidis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,B,4
+NA,PK-Pub2-MO3-D3,Pseudomonas otitidis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,D,3
+NA,PK-Pub2-MO3-F3,Pseudomonas otitidis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,F,3
+NA,PK-Pub2-MO3-2min1,Pseudomonas otitidis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,2min,1
+NA,PK1-MO4-ICU-2min1,Pseudomonas otitidis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,2min,1
+NA,PK1-MO4-ICU-B4,Pseudomonas sediminis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,B,4
+NA,US-HM1-MO5-D4,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,HM1,US-HOME-1,5,20180709,D,4
+NA,US-MK-MO5-D6,Pseudomonas nitroreducens,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,6
+NA,PK-Prv1-MO1-D1,Pseudomonas sichuanensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,D,1
+NA,PK-Prv1-MO1-D2,Pseudomonas sichuanensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,D,2
+NA,PK-Prv1-MO1-D3,Pseudomonas sichuanensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,D,3
+NA,PK-Pub1-MO2-B3,Pseudomonas sichuanensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,B,3
+NA,PK1-MO1-ICU-B6,Pseudomonas sp. ICU-B6,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,B,6
+NA,US-IOH-MO5-B1,Pseudomonas putida,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,5,20180709,B,1
+NA,PK1-MO4-ICU-F4,Pseudomonas sp. ICU-B6,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,F,4
+NA,PK1-MO1-ICU-D1,Pseudomonas sp. ICU-D1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,1
+NA,PK1-MO3-ICU-Air1,Pseudomonas sp. ICU-D1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,Air,1
+NA,PK1-MO3-ICU-D2,Pseudomonas sp. ICU-D1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,D,2
+NA,PK1-MO4-ICU-D5,Pseudomonas sp. ICU-D1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,D,5
+NA,PK3-MO1-ICU-2min2,Pseudomonas sp. ICU-F1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,2min,2
+NA,PK2-MO3-ICU-F1,Pseudomonas sp. ICU-F1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,3,20180501,F,1
+NA,PK3-MO1-ICU-2min1,Pseudomonas sp. ICU-F1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,2min,1
+NA,PK-Pub2-MO2-2min1,Pseudomonas sp. ICU-F4,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,2min,1
+NA,PK-Pub2-MO2-2min2,Pseudomonas sp. ICU-F4,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,2min,2
+NA,PK1-MO3-ICU-F4,Pseudomonas sp. ICU-F4,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,F,4
+NA,PK-Prv2-MO1-B1,Pseudomonas sp. p106,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,B,1
+NA,PK-Prv1-MO3-B2,Pseudomonas sp. PRV1-B2,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,B,2
+NA,PK-Prv2-MO2-B1,Pseudomonas sp. PRV2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,2,20180402,B,1
+NA,PK-Pub1-MO4-F3,Pseudomonas sp. PUB1-F3,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,F,3
+NA,PK-Pub2-MO1-B1,Pseudomonas sp. PUB2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,B,1
+NA,PK-Pub2-MO2-D2,Pseudomonas sp. PUB2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,D,2
+NA,PK1-MO1-ICU-D6,Pseudomonas sp. PUB2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,D,6
+NA,PK3-MO1-ICU-D3,Pseudomonas sp. PUB2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,3
+NA,PK3-MO2-ICU-D7,Pseudomonas sp. PUB2-B1,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,7
+NA,PK-Pub2-MO2-B2,Pseudomonas sp. PUB2-B2,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,B,2
+NA,PK-Pub2-MO2-F2,Pseudomonas sp. PUB2-B2,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,F,2
+NA,PK-Pub2-MO2-B4,Pseudomonas sp. PUB2-B4,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,B,4
+NA,PK2-MO4-ICU-B4,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,B,4
+NA,PK-Prv1-MO1-B1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,B,1
+NA,PK-Prv1-MO2-D3,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,D,3
+NA,PK-Prv1-MO3-Air2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,Air,2
+NA,PK-Prv1-MO3-D1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,D,1
+NA,PK-Prv1-MO3-D2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,D,2
+NA,PK-Prv1-MO4-D3,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,D,3
+NA,PK-Prv2-MO1-B2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,B,2
+NA,PK-Prv2-MO1-D1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,1,20180227,D,1
+NA,PK-Prv2-MO2-D2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,2,20180402,D,2
+NA,PK-Prv2-MO4-Air1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,Air,1
+NA,PK-Prv2-MO4-B1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,B,1
+NA,PK-Prv2-MO4-D1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,D,1
+NA,US-ICU21-MO1-FC1,Sphingobium yanoikuyae,Sphingobium,Sphingomonadaceae,Sphingomonadales,Alphaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,FC,1
+NA,PK-Prv2-MO4-F1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,F,1
+NA,PK-Pub1-MO4-D2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,D,2
+NA,PK-Pub2-MO1-D5,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,D,5
+NA,PK-Pub2-MO2-D4,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,D,4
+NA,PK-Pub2-MO4-B2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,B,2
+NA,PK-Pub2-MO4-D1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,D,1
+NA,PK-Pub2-MO4-D4,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,D,4
+NA,PK2-MO4-ICU-Air1,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,Air,1
+NA,PK3-MO4-ICU-D2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,D,2
+NA,PK2-MO4-ICU-F2,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,F,2
+NA,PK2-MO4-ICU-F4,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,F,4
+NA,US-ICU21-MO1-B1,Sphingobium yanoikuyae,Sphingobium,Sphingomonadaceae,Sphingomonadales,Alphaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,B,1
+NA,PK2-MO4-ICU-F5,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,4,20180718,F,5
+NA,US-ICU21-MO1-F1,Sphingobium yanoikuyae,Sphingobium,Sphingomonadaceae,Sphingomonadales,Alphaproteobacteria,Proteobacteria,US,ICU21,US-ICU-4,1,20180220,F,1
+NA,PK3-MO4-ICU-F5,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,F,5
+NA,PK3-MO4-ICU-F3,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,F,3
+NA,PK-Pub2-MO2-Air1,Pseudomonas toyotomiensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,Air,1
+NA,PK-Pub2-MO2-Air2,Pseudomonas toyotomiensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,Air,2
+NA,PK-Pub2-MO2-D3,Pseudomonas toyotomiensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,D,3
+NA,PK1-MO2-ICU-D5,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,D,5
+NA,PK2-MO1-ICU-B4,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,B,4
+NA,PK4-MO2-ICU-B3,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,2,20180402,B,3
+NA,PK2-MO1-ICU-D4,Shewanella sp. ICU-D4,Shewanella,Shewanellaceae,Alteromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,4
+NA,PK3-MO4-ICU-D1,Shewanella sp. ICU-D4,Shewanella,Shewanellaceae,Alteromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,4,20180718,D,1
+NA,PK3-MO1-ICU-D7,Shewanella xiamenensis,Shewanella,Shewanellaceae,Alteromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,1,20180227,D,7
+NA,PK3-MO3-ICU-F4,Shewanella xiamenensis,Shewanella,Shewanellaceae,Alteromonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,F,4
+NA,PK-Pub1-MO1-2min1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,2min,1
+NA,PK-Pub2-MO1-FC1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,FC,1
+NA,PK-Pub2-MO1-FC2,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,FC,2
+NA,US-HM2-MO4-D4,Stenotrophomonas sp. ICU-F12,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,HM2,US-HOME-2,4,20180604,D,4
+NA,US-IOH-MO3-D2,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,D,2
+NA,US-IOH-MO4-D1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,4,20180604,D,1
+NA,US-MK-MO1-B4,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,B,4
+NA,US-MK-MO1-D3,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,3
+NA,US-MK-MO1-D6,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,1,20180220,D,6
+NA,US-MK-MO2-D5,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,2,20180409,D,5
+NA,US-MK-MO3-D1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,3,20180514,D,1
+NA,US-MK-MO5-D5,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,5
+NA,PK-Prv1-MO2-B1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,B,1
+NA,PK-Prv1-MO2-D1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,D,1
+NA,PK-Prv1-MO2-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,F,1
+NA,PK-Prv1-MO2-2min1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,2min,1
+NA,US-MK-MO4-D5,Achromobacter mucicolens,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,US,MK,US-WORK-2,4,20180604,D,5
+NA,PK-Prv1-MO3-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,F,1
+NA,PK-Prv1-MO4-Air1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,Air,1
+NA,US-IOH-MO1-B5,Enterobacter asburiae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,B,5
+NA,US-IOH-MO1-D3,Enterobacter asburiae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,3
+NA,US-IOH-MO2-D2,Enterobacter asburiae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,2,20180409,D,2
+NA,US-IOH-MO3-D3,Enterobacter asburiae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,3,20180514,D,3
+NA,US-MK-MO5-D2,Enterobacter asburiae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,US,MK,US-WORK-2,5,20180709,D,2
+NA,PK-Prv1-MO4-B5,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,4,20180718,B,5
+NA,PK-Prv2-MO3-B1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,B,1
+NA,PK-Prv2-MO3-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,F,1
+NA,PK-Pub1-MO1-F4,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,1,20180227,F,4
+NA,PK-Prv1-MO2-FC1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,2,20180402,FC,1
+NA,PK-Pub1-MO2-2min1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,2min,1
+NA,PK-Pub1-MO3-D1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,D,1
+NA,US-IOH-MO1-D6,Pseudomonas atacamensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,US,IOH,US-WORK-1,1,20180220,D,6
+NA,PK-Pub1-MO3-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,F,1
+NA,PK-Pub1-MO2-FC1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,FC,1
+NA,PK-Pub1-MO4-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,4,20180718,F,1
+NA,PK-Pub2-MO1-B4,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,B,4
+NA,PK-Pub1-MO3-2min1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,2min,1
+NA,PK-Pub1-MO3-FC1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,3,20180501,FC,1
+NA,PK-Pub2-MO2-B3,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,2,20180402,B,3
+NA,PK-Pub2-MO3-Air1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,Air,1
+NA,PK-Pub2-MO3-B1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,B,1
+NA,PK-Pub2-MO3-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,F,1
+NA,PK-Pub2-MO3-FC1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,3,20180501,FC,1
+NA,PK-Pub2-MO4-F1,Stenotrophomonas maltophilia,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,4,20180718,F,1
+NA,PK2-MO1-ICU-D3,Stenotrophomonas sp. ICU-B4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU2,PAK-ICU-2,1,20180227,D,3
+NA,PK4-MO3-ICU-B4,Stenotrophomonas sp. ICU-B4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU4,PAK-ICU-4,3,20180501,B,4
+NA,PK-Pub1-MO2-Air1,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub1,PAK-WORK-1,2,20180402,Air,1
+NA,PK3-MO2-ICU-D9,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,2,20180402,D,9
+NA,PK3-MO3-ICU-F1,Stenotrophomonas sp. ICU-F12,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU3,PAK-ICU-3,3,20180501,F,1
+NA,PK1-MO3-ICU-F3,Stenotrophomonas sp. ICU-F32,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,3,20180501,F,3
+NA,PK1-MO1-ICU-FC1,Stenotrophomonas sp. ICU-FC1,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,FC,1
+NA,PK1-MO1-ICU-FC2,Stenotrophomonas sp. ICU-FC1,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,1,20180227,FC,2
+NA,PK1-MO4-ICU-F2,Stenotrophomonas sp. ICU-FC2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,4,20180718,F,2
+NA,PK1-MO2-ICU-FC2,Stenotrophomonas sp. ICU-FC2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,ICU1,PAK-ICU-1,2,20180402,FC,2
+NA,PK-Prv1-MO1-D4,Stenotrophomonas sp. PRV1-D4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,1,20180227,D,4
+NA,PK-Prv1-MO3-Air3,Stenotrophomonas sp. PRV1-D4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,Air,3
+NA,PK-Prv1-MO3-D3,Stenotrophomonas sp. PRV1-D4,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv1,PAK-HOME-1,3,20180501,D,3
+NA,PK-Prv2-MO4-D2,Stenotrophomonas sp. PRV2-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,4,20180718,D,2
+NA,PK-Prv2-MO3-D6,Stenotrophomonas sp. PRV2-D6,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Prv2,PAK-HOME-2,3,20180501,D,6
+NA,PK-Pub2-MO1-F2,Stenotrophomonas sp. PUB2-F2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,Pub2,PAK-WORK-2,1,20180227,F,2
+270,GCF_003939885.1_ASM393988v1_genomic,Achromobacter aegrifaciens,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,washroom sink,NA
+AD_173,GCF_003939895.1_ASM393989v1_genomic,Achromobacter denitrificans,Achromobacter,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,washroom sink,NA
+AB_002,GCF_003941605.1_ASM394160v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,nursing call button,NA
+AB_014,GCF_003941585.1_ASM394158v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside rail,NA
+AB_020,GCF_003941545.1_ASM394154v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside light switch,NA
+AB_023,GCF_003941525.1_ASM394152v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,washroom sink,NA
+AB_025,GCF_003941815.1_ASM394181v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,nursing call button,NA
+AB_026,GCF_003941785.1_ASM394178v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,bedside rail,NA
+AB_029,GCF_003941795.1_ASM394179v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,bedside light switch,NA
+AB_035,GCF_003941515.1_ASM394151v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,alcohol foam dispenser,NA
+AB_036,GCF_003941505.1_ASM394150v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,nursing call button,NA
+AB_039,GCF_003941485.1_ASM394148v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside rail,NA
+AB_043,GCF_003941735.1_ASM394173v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside light switch,NA
+AB_053,GCF_003941755.1_ASM394175v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160426,washroom sink,NA
+AB_056,GCF_003941435.1_ASM394143v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,nursing call button,NA
+AB_062,GCF_003941425.1_ASM394142v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,alcohol foam dispenser,NA
+AB_074,GCF_003941405.1_ASM394140v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160705,washroom sink,NA
+AB_077,GCF_003941715.1_ASM394171v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,bedside rail,NA
+AB_083,GCF_003941695.1_ASM394169v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,washroom sink,NA
+AB_085,GCF_003941415.1_ASM394141v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,alcohol foam dispenser,NA
+AB_088,GCF_003941385.1_ASM394138v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,nursing call button,NA
+AB_091,GCF_003941315.1_ASM394131v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,bedside rail,NA
+AB_094,GCF_003941685.1_ASM394168v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,bedside light switch,NA
+AB_095,GCF_003941295.1_ASM394129v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,washroom sink,NA
+AB_097,GCF_003941645.1_ASM394164v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,alcohol foam dispenser,NA
+AB_098,GCF_003941325.1_ASM394132v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,nursing call button,NA
+AB_100,GCF_003941285.1_ASM394128v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,bedside rail,NA
+AB_102,GCF_003941625.1_ASM394162v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,bedside light switch,NA
+AB_104,GCF_003941305.1_ASM394130v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,washroom sink,NA
+AB_107,GCF_003941245.1_ASM394124v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,alcohol foam dispenser,NA
+AB_115,GCF_003941255.1_ASM394125v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,washroom sink,NA
+AB_126,GCF_003941185.1_ASM394118v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,alcohol foam dispenser,NA
+AB_140,GCF_003941615.1_ASM394161v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160705,washroom sink,NA
+AB_145,GCF_003941205.1_ASM394120v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,bedside rail,NA
+AB_147,GCF_003941195.1_ASM394119v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,bedside light switch,NA
+AB_149,GCF_003941145.1_ASM394114v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,washroom sink,NA
+AB_152,GCF_003941125.1_ASM394112v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,alcohol foam dispenser,NA
+AB_156,GCF_003940135.1_ASM394013v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,bedside rail,NA
+AB_159,GCF_003940125.1_ASM394012v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,bedside light switch,NA
+AB_161,GCF_003941135.1_ASM394113v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,washroom sink,NA
+AB_165,GCF_003940105.1_ASM394010v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,alcohol foam dispenser,NA
+AB_168,GCF_003940965.1_ASM394096v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,nursing call button,NA
+AB_170,GCF_003941085.1_ASM394108v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,bedside rail,NA
+AB_172,GCF_003940915.1_ASM394091v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,bedside light switch,NA
+AB_186,GCF_003939655.1_ASM393965v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160524,washroom sink,NA
+AB_191,GCF_003940895.1_ASM394089v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,nursing call button,NA
+AB_193,GCF_003940875.1_ASM394087v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,bedside rail,NA
+AB_194,GCF_003941095.1_ASM394109v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,bedside light switch,NA
+AB_203,GCF_003941065.1_ASM394106v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160705,alcohol foam dispenser,NA
+AB_221,GCF_003939645.1_ASM393964v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,nursing call button,NA
+AB_230,GCF_003941025.1_ASM394102v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside rail,NA
+AB_235,GCF_003940075.1_ASM394007v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside light switch,NA
+AB_258,GCF_003940865.1_ASM394086v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,nursing call button,NA
+AB_261,GCF_003940925.1_ASM394092v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,bedside rail,NA
+AB_267,GCF_003940065.1_ASM394006v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,bedside light switch,NA
+AB_272,GCF_003941015.1_ASM394101v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,alcohol foam dispenser,NA
+AB_331,GCF_003939625.1_ASM393962v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,alcohol foam dispenser,NA
+AB_347,GCF_003939595.1_ASM393959v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160927,nursing call button,NA
+AB_349,GCF_003939585.1_ASM393958v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160927,bedside rail,NA
+AB_353,GCF_003939565.1_ASM393956v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160927,alcohol foam dispenser,NA
+AB_359,GCF_003939545.1_ASM393954v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20170321,alcohol foam dispenser,NA
+AB_363,GCF_003940045.1_ASM394004v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,nursing call button,NA
+AB_364,GCF_003939525.1_ASM393952v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,bedside rail,NA
+AB_368,GCF_003939505.1_ASM393950v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20170321,bedside rail,NA
+AB_369,GCF_003939465.1_ASM393946v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20170321,bedside light switch,NA
+AB_374,GCF_003939475.1_ASM393947v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20170321,alcohol foam dispenser,NA
+AB_381,GCF_003939445.1_ASM393944v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,nursing call button,NA
+AB_382,GCF_003940015.1_ASM394001v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,bedside rail,NA
+AB_387,GCF_003940005.1_ASM394000v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,alcohol foam dispenser,NA
+AB_389,GCF_003940395.1_ASM394039v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,nursing call button,NA
+AB_390,GCF_003939985.1_ASM393998v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,bedside rail,NA
+AB_391,GCF_003940365.1_ASM394036v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,bedside light switch,NA
+AB_394,GCF_003940335.1_ASM394033v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,alcohol foam dispenser,NA
+AB_396,GCF_003939955.1_ASM393995v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20170321,bedside rail,NA
+AB_397,GCF_003939935.1_ASM393993v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20170321,bedside light switch,NA
+AB_401,GCF_003939415.1_ASM393941v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20170321,alcohol foam dispenser,NA
+AB_US_1,GCF_003939395.1_ASM393939v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160329,nursing call button,NA
+AB_US_10,GCF_003940325.1_ASM394032v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160412,bedside rail,NA
+AB_US_2,GCF_003939385.1_ASM393938v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160329,bedside rail,NA
+AB_US_6,GCF_003939925.1_ASM393992v1_genomic,Acinetobacter baumannii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160329,bedside light switch,NA
+AJ_082,AJ_082,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,washroom sink,NA
+AJ_385,GCF_003940285.1_ASM394028v1_genomic,Acinetobacter johnsonii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,washroom sink,NA
+AJ_068,AJ_068,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,washroom sink,NA
+AJ_243,GCF_003939835.1_ASM393983v1_genomic,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,washroom sink,NA
+AJ_351,AJ_351,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160927,washroom sink,NA
+AJ_356,GCF_003940305.1_ASM394030v1_genomic,Acinetobacter junii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20170321,washroom sink,NA
+AL_065,AL_065,Acinetobacter lwoffii,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,bedside rail,NA
+AS_142,GCF_003938595.1_ASM393859v1_genomic,Acinetobacter soli,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,nursing call button,NA
+AV_175,AV_175,Acinetobacter variabilis,Acinetobacter,Moraxellaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,alcohol foam dispenser,NA
+393,Alcaligenes_393,Alcaligenes aquatilis,Alcaligenes,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,washroom sink,NA
+AF_174,GCF_003939865.1_ASM393986v1_genomic,Alcaligenes faecalis,Alcaligenes,Alcaligenaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,washroom sink,NA
+AS_373,GCF_003940265.1_ASM394026v1_genomic,Atlantibacter subterranea,Atlantibacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20170321,alcohol foam dispenser,NA
+AS_379,GCF_003939305.1_ASM393930v1_genomic,Atlantibacter subterranea,Atlantibacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,nursing call button,NA
+AS_383,GCF_003938425.1_ASM393842v1_genomic,Atlantibacter subterranea,Atlantibacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,bedside rail,NA
+357,GCF_003938605.1_ASM393860v1_genomic,Brevundimonas sp. 357,Brevundimonas,Caulobacteraceae,Caulobacterales,Alphaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20170321,washroom sink,NA
+CF_355,GCF_003938205.1_ASM393820v1_genomic,Citrobacter farmeri,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20170321,washroom sink,NA
+CF_324,CF_324,Citrobacter portucalensis,Citrobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,washroom sink,NA
+WF_348,GCF_003935165.1_ASM393516v1_genomic,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,PAK-1,PAK-ICU-5,NA,20160927,nursing call button,NA
+WF_350,GCF_003935845.1_ASM393584v1_genomic,Empedobacter sp. PUB2-D1,Empedobacter,Flavobacteriaceae,Flavobacteriales,Flavobacteriia,Bacteroidetes,PAK,PAK-1,PAK-ICU-5,NA,20160927,bedside rail,NA
+EC_073,GCF_003938165.1_ASM393816v1_genomic,Enterobacter cloacae,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160607,alcohol foam dispenser,NA
+EH_057,GCF_003936565.1_ASM393656v1_genomic,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,nursing call button,NA
+EH_183,GCF_003937905.1_ASM393790v1_genomic,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,alcohol foam dispenser,NA
+EH_279,GCF_003936525.1_ASM393652v1_genomic,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,nursing call button,NA
+EH_316,EH_316,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,alcohol foam dispenser,NA
+EH_360,GCF_003937925.1_ASM393792v1_genomic,Enterobacter hormaechei,Enterobacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,nursing call button,NA
+EF_006,GCF_003940245.1_ASM394024v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160329,nursing call button,NA
+EF_028,GCF_003937635.1_ASM393763v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160329,bedside light switch,NA
+EF_033,GCF_003938375.1_ASM393837v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160329,washroom sink,NA
+EF_034,GCF_003940205.1_ASM394020v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160329,alcohol foam dispenser,NA
+EF_042,GCF_003938135.1_ASM393813v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside light switch,NA
+EF_048,GCF_003938525.1_ASM393852v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160412,alcohol foam dispenser,NA
+EF_051,GCF_003939215.1_ASM393921v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160426,nursing call button,NA
+EF_052,GCF_003937355.1_ASM393735v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160426,bedside rail,NA
+EF_054,GCF_003938515.1_ASM393851v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160426,washroom sink,NA
+EF_078,GCF_003939805.1_ASM393980v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160329,bedside rail,NA
+EF_086,GCF_003940215.1_ASM394021v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20160329,bedside rail,NA
+EF_092,GCF_003938125.1_ASM393812v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160412,bedside rail,NA
+EF_101,GCF_003939205.1_ASM393920v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160426,bedside rail,NA
+EF_103,GCF_003939775.1_ASM393977v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160426,bedside light switch,NA
+EF_108,GCF_003938395.1_ASM393839v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160426,alcohol foam dispenser,NA
+EF_111,GCF_003938505.1_ASM393850v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160510,nursing call button,NA
+EF_120,GCF_003938105.1_ASM393810v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160524,nursing call button,NA
+EF_127,GCF_003938045.1_ASM393804v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160524,alcohol foam dispenser,NA
+EF_129,GCF_003938065.1_ASM393806v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160607,nursing call button,NA
+EF_132,GCF_003940995.1_ASM394099v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160607,bedside light switch,NA
+EF_139,GCF_003937575.1_ASM393757v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20160705,bedside rail,NA
+EF_143,GCF_003938365.1_ASM393836v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160329,nursing call button,NA
+EF_155,GCF_003938025.1_ASM393802v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160412,nursing call button,NA
+EF_157,GCF_003939165.1_ASM393916v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160412,bedside rail,NA
+EF_166,GCF_003938345.1_ASM393834v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160412,alcohol foam dispenser,NA
+EF_169,GCF_003939765.1_ASM393976v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160426,nursing call button,NA
+EF_171,GCF_003938035.1_ASM393803v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160426,bedside rail,NA
+EF_176,GCF_003939745.1_ASM393974v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160426,alcohol foam dispenser,NA
+EF_181,GCF_003938305.1_ASM393830v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20160510,washroom sink,NA
+EF_205,GCF_003938495.1_ASM393849v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside light switch,NA
+EF_231,GCF_003938485.1_ASM393848v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside rail,NA
+EF_238,GCF_003938285.1_ASM393828v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside light switch,NA
+EF_248,GCF_003938005.1_ASM393800v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160412,alcohol foam dispenser,NA
+EF_264,GCF_003938275.1_ASM393827v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160426,bedside rail,NA
+EF_275,GCF_003939175.1_ASM393917v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160426,alcohol foam dispenser,NA
+EF_292,GCF_003965125.1_ASM396512v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160510,washroom sink,NA
+EF_313,GCF_003938265.1_ASM393826v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160524,washroom sink,NA
+EF_325,GCF_003936605.1_ASM393660v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160607,washroom sink,NA
+EF_334,GCF_003937935.1_ASM393793v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-4,PAK-ICU-8,NA,20160705,bedside rail,NA
+EF_354,GCF_003938445.1_ASM393844v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20170321,bedside rail,NA
+EF_358,GCF_003940185.1_ASM394018v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-1,PAK-ICU-5,NA,20170321,alcohol foam dispenser,NA
+EF_367,GCF_003936615.1_ASM393661v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20170321,nursing call button,NA
+EF_370,GCF_003937285.1_ASM393728v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20170321,bedside light switch,NA
+EF_375,GCF_003936585.1_ASM393658v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-2,PAK-ICU-6,NA,20170321,alcohol foam dispenser,NA
+EF_380,GCF_003937555.1_ASM393755v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20170321,nursing call button,NA
+EF_384,GCF_003939145.1_ASM393914v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20170321,bedside light switch,NA
+EF_386,GCF_003939705.1_ASM393970v1_genomic,Enterococcus faecium,Enterococcus,Enterococcaceae,Lactobacillales,Bacilli,Firmicutes,PAK,PAK-3,PAK-ICU-7,NA,20170321,alcohol foam dispenser,NA
+198,GCF_003937915.1_ASM393791v1_genomic,Erwinia sp. 198,Erwinia,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,alcohol foam dispenser,NA
+EC_071,GCF_003938585.1_ASM393858v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,alcohol foam dispenser,NA
+EC_119,GCF_003939265.1_ASM393926v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,nursing call button,NA
+EC_212,GCF_003939275.1_ASM393927v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,washroom sink,NA
+EC_219,GCF_003938155.1_ASM393815v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,alcohol foam dispenser,NA
+EC_337,GCF_003937655.1_ASM393765v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160705,washroom sink,NA
+EC_340,GCF_003939245.1_ASM393924v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160705,washroom sink,NA
+EC_US_14,GCF_003937625.1_ASM393762v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160510,washroom sink,NA
+EC_US_18,GCF_003939825.1_ASM393982v1_genomic,Escherichia coli,Escherichia,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,US-1,US-ICU-5,NA,20160510,alcohol foam dispenser,NA
+KO_365,GCF_003937225.1_ASM393722v1_genomic,Klebsiella oxytoca,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,washroom sink,NA
+KP_008,GCF_003965135.1_ASM396513v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,nursing call button,NA
+KP_017,GCF_003936515.1_ASM393651v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside rail,NA
+KP_030,GCF_003938235.1_ASM393823v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,washroom sink,NA
+KP_040,GCF_003937565.1_ASM393756v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside rail,NA
+KP_044,GCF_003937535.1_ASM393753v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside light switch,NA
+KP_046,GCF_003937525.1_ASM393752v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,washroom sink,NA
+KP_063,GCF_003937245.1_ASM393724v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,alcohol foam dispenser,NA
+KP_084,GCF_003937235.1_ASM393723v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,washroom sink,NA
+KP_089,GCF_003936505.1_ASM393650v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,nursing call button,NA
+KP_093,GCF_003937205.1_ASM393720v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,bedside rail,NA
+KP_109,GCF_003936475.1_ASM393647v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,alcohol foam dispenser,NA
+KP_116,GCF_003936465.1_ASM393646v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,washroom sink,NA
+KP_121,GCF_003936435.1_ASM393643v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,bedside rail,NA
+KP_123,GCF_003937185.1_ASM393718v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,bedside light switch,NA
+KP_135,GCF_003937145.1_ASM393714v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,washroom sink,NA
+KP_136,GCF_003937125.1_ASM393712v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,alcohol foam dispenser,NA
+KP_144,GCF_003939115.1_ASM393911v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,nursing call button,NA
+KP_158,GCF_003937455.1_ASM393745v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,bedside rail,NA
+KP_160,KP_160,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,bedside light switch,NA
+KP_184,GCF_003937105.1_ASM393710v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,alcohol foam dispenser,NA
+KP_195,GCF_003937075.1_ASM393707v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,bedside light switch,NA
+KP_208,GCF_003936425.1_ASM393642v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside light switch,NA
+KP_215,GCF_003937065.1_ASM393706v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,washroom sink,NA
+KP_241,GCF_003937035.1_ASM393703v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside light switch,NA
+KP_280,GCF_003936375.1_ASM393637v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,nursing call button,NA
+KP_301,GCF_003937025.1_ASM393702v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,nursing call button,NA
+KP_307,GCF_003940165.1_ASM394016v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,bedside rail,NA
+KP_310,GCF_003937465.1_ASM393746v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,bedside light switch,NA
+KP_317,GCF_003936365.1_ASM393636v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,alcohol foam dispenser,NA
+KP_320,GCF_003937475.1_ASM393747v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,nursing call button,NA
+KP_328,GCF_003944905.1_ASM394490v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,washroom sink,NA
+KP_343,GCF_003944885.1_ASM394488v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160705,washroom sink,NA
+KP_346,GCF_003937005.1_ASM393700v1_genomic,Klebsiella pneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160705,alcohol foam dispenser,NA
+KQ_146,GCF_003936335.1_ASM393633v1_genomic,Klebsiella quasipneumoniae,Klebsiella,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,bedside rail,NA
+OA_244,GCF_003937445.1_ASM393744v1_genomic,Ochrobactrum anthropi,Ochrobactrum,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,washroom sink,NA
+OA_392,GCF_003937425.1_ASM393742v1_genomic,Ochrobactrum anthropi,Ochrobactrum,Brucellaceae,Hyphomicrobiales,Alphaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160927,washroom sink,NA
+PA_200,GCF_003936875.1_ASM393687v1_genomic,Pandoraea apista,Pandoraea,Burkholderiaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160705,bedside rail,NA
+PA_201,GCF_003937325.1_ASM393732v1_genomic,Pandoraea apista,Pandoraea,Burkholderiaceae,Burkholderiales,Betaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160705,bedside light switch,NA
+PD_192,GCF_003936175.1_ASM393617v1_genomic,Pantoea dispersa,Pantoea,Erwiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,nursing call button,NA
+PR_162,PR_162,Providencia sp. 162,Providencia,Morganellaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,washroom sink,NA
+PA_011,GCF_003936975.1_ASM393697v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,nursing call button,NA
+PA_032,GCF_003940675.1_ASM394067v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,washroom sink,NA
+PA_038,GCF_003936385.1_ASM393638v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,nursing call button,NA
+PA_041,GCF_003936965.1_ASM393696v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside rail,NA
+PA_058,GCF_003944895.1_ASM394489v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,nursing call button,NA
+PA_059,GCF_003940635.1_ASM394063v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,bedside rail,NA
+PA_060,GCF_003935835.1_ASM393583v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,bedside light switch,NA
+PA_061,GCF_003940665.1_ASM394066v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,washroom sink,NA
+PA_064,GCF_003936925.1_ASM393692v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160510,alcohol foam dispenser,NA
+PA_112,GCF_003936325.1_ASM393632v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,nursing call button,NA
+PA_113,GCF_003937395.1_ASM393739v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,bedside rail,NA
+PA_114,GCF_003937375.1_ASM393737v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,bedside light switch,NA
+PA_117,GCF_003936935.1_ASM393693v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,washroom sink,NA
+PA_118,GCF_003939695.1_ASM393969v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160510,alcohol foam dispenser,NA
+PA_178,GCF_003939105.1_ASM393910v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,nursing call button,NA
+PA_179,GCF_003939685.1_ASM393968v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,bedside rail,NA
+PA_180,GCF_003936295.1_ASM393629v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,bedside light switch,NA
+PA_182,GCF_003936245.1_ASM393624v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,washroom sink,NA
+PA_185,GCF_003936905.1_ASM393690v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160510,alcohol foam dispenser,NA
+PA_187,GCF_003936865.1_ASM393686v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160524,washroom sink,NA
+PA_254,GCF_003936835.1_ASM393683v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,alcohol foam dispenser,NA
+PA_283,GCF_003936255.1_ASM393625v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,nursing call button,NA
+PA_286,GCF_003936225.1_ASM393622v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,bedside rail,NA
+PA_289,GCF_003940625.1_ASM394062v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,bedside light switch,NA
+PA_294,GCF_003940585.1_ASM394058v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,washroom sink,NA
+PA_298,GCF_003936235.1_ASM393623v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,alcohol foam dispenser,NA
+PA_304,GCF_003940575.1_ASM394057v1_genomic,Pseudomonas aeruginosa,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160524,nursing call button,NA
+PF_150,GCF_003940565.1_ASM394056v1_genomic,Pseudomonas atacamensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,washroom sink,NA
+PF_122,GCF_003936165.1_ASM393616v1_genomic,Pseudomonas fulva,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,bedside rail,NA
+PL_137,GCF_003936185.1_ASM393618v1_genomic,Pseudomonas lutea,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,alcohol foam dispenser,NA
+PL_378,GCF_003936815.1_ASM393681v1_genomic,Pseudomonas lutea,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160927,alcohol foam dispenser,NA
+PM_105,GCF_003936805.1_ASM393680v1_genomic,Pseudomonas atacamensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,washroom sink,NA
+PO_271,GCF_003936775.1_ASM393677v1_genomic,Pseudomonas oleovorans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,washroom sink,NA
+PS_399,GCF_003935525.1_ASM393552v1_genomic,Pseudomonas saudiphocaensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20170321,washroom sink,NA
+297,GCF_003935465.1_ASM393546v1_genomic,Pseudomonas sediminis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160510,washroom sink,NA
+o96,GCF_003935455.1_ASM393545v1_genomic,Pseudomonas sediminis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,washroom sink,NA
+p106,GCF_003936645.1_ASM393664v1_genomic,Pseudomonas sp. p106,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,washroom sink,NA
+361,GCF_003935475.1_ASM393547v1_genomic,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,nursing call button,NA
+p99,GCF_003936655.1_ASM393665v1_genomic,Pseudomonas juntendi,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,nursing call button,NA
+s199,GCF_003935435.1_ASM393543v1_genomic,Pseudomonas nitrititolerans,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,alcohol foam dispenser,NA
+v388,GCF_003935425.1_ASM393542v1_genomic,Pseudomonas sp. v388,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20170321,alcohol foam dispenser,NA
+PS_001,GCF_003965105.1_ASM396510v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside light switch,NA
+PS_027,GCF_003936145.1_ASM393614v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,bedside rail,NA
+PS_050,GCF_003940985.1_ASM394098v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,alcohol foam dispenser,NA
+PS_066,GCF_003940545.1_ASM394054v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,bedside light switch,NA
+PS_072,GCF_003936125.1_ASM393612v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160607,washroom sink,NA
+PS_075,GCF_003936745.1_ASM393674v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160705,alcohol foam dispenser,NA
+PS_087,GCF_003940515.1_ASM394051v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160607,alcohol foam dispenser,NA
+PS_110,GCF_003936715.1_ASM393671v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160426,alcohol foam dispenser,NA
+PS_125,GCF_003936075.1_ASM393607v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,washroom sink,NA
+PS_128,GCF_003936085.1_ASM393608v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160524,alcohol foam dispenser,NA
+PS_130,GCF_003936035.1_ASM393603v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,bedside rail,NA
+PS_131,GCF_003936705.1_ASM393670v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,bedside rail,NA
+PS_133,GCF_003940495.1_ASM394049v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,bedside light switch,NA
+PS_134,GCF_003936055.1_ASM393605v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160607,bedside light switch,NA
+PS_138,GCF_003936025.1_ASM393602v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160705,nursing call button,NA
+PS_151,GCF_003935965.1_ASM393596v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,washroom sink,NA
+PS_167,GCF_003935925.1_ASM393592v1_genomic,Pseudomonas sp. 167,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,alcohol foam dispenser,NA
+PS_197,GCF_003935935.1_ASM393593v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,washroom sink,NA
+PS_211,GCF_003935955.1_ASM393595v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside light switch,NA
+PS_234,GCF_003936675.1_ASM393667v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,bedside rail,NA
+PS_257,GCF_003935565.1_ASM393556v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160412,alcohol foam dispenser,NA
+PS_366,GCF_003935575.1_ASM393557v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,washroom sink,NA
+PS_376,GCF_003935545.1_ASM393554v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160927,bedside light switch,NA
+PS_377,GCF_003935625.1_ASM393562v1_genomic,Pseudomonas stutzeri,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160927,washroom sink,NA
+PX_067,GCF_003935375.1_ASM393537v1_genomic,Pseudomonas kunmingensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,bedside light switch,NA
+PX_177,GCF_003935605.1_ASM393560v1_genomic,Pseudomonas kunmingensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160426,alcohol foam dispenser,NA
+PX_371,GCF_003935345.1_ASM393534v1_genomic,Pseudomonas kunmingensis,Pseudomonas,Pseudomonadaceae,Pseudomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20170321,washroom sink,NA
+SM_037,GCF_003935635.1_ASM393563v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,nursing call button,NA
+SM_045,GCF_003935355.1_ASM393535v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,bedside light switch,NA
+SM_076,GCF_003935245.1_ASM393524v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,nursing call button,NA
+SM_079,GCF_003935235.1_ASM393523v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160329,bedside light switch,NA
+SM_090,GCF_003935875.1_ASM393587v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160412,nursing call button,NA
+SM_153,GCF_003935225.1_ASM393522v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160329,alcohol foam dispenser,NA
+SM_164,GCF_003935805.1_ASM393580v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,washroom sink,NA
+SM_188,GCF_003935265.1_ASM393526v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160524,washroom sink,NA
+SM_190,GCF_003935775.1_ASM393577v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160524,alcohol foam dispenser,NA
+SM_196,GCF_003935125.1_ASM393512v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160607,washroom sink,NA
+SM_204,GCF_003935755.1_ASM393575v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,bedside rail,NA
+SM_321,GCF_003935135.1_ASM393513v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,nursing call button,NA
+SM_362,GCF_003935145.1_ASM393514v1_genomic,Serratia marcescens,Serratia,Yersiniaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-2,PAK-ICU-6,NA,20160927,nursing call button,NA
+SM_031,GCF_003935335.1_ASM393533v1_genomic,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160329,washroom sink,NA
+SM_047,GCF_003935325.1_ASM393532v1_genomic,Stenotrophomonas sp. ICU-D2,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160412,washroom sink,NA
+SM_055,GCF_003935255.1_ASM393525v1_genomic,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160426,washroom sink,NA
+SM_069,GCF_003935615.1_ASM393561v1_genomic,Stenotrophomonas sp. 069,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,washroom sink,NA
+SM_163,GCF_003935825.1_ASM393582v1_genomic,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-3,PAK-ICU-7,NA,20160412,washroom sink,NA
+SM_218,GCF_003935155.1_ASM393515v1_genomic,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,washroom sink,NA
+SM_220,GCF_003935735.1_ASM393573v1_genomic,Stenotrophomonas sp. ICU-D9,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160329,alcohol foam dispenser,NA
+278,GCF_003935715.1_ASM393571v1_genomic,Stenotrophomonas sp. 278,Stenotrophomonas,Xanthomonadaceae,Xanthomonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160426,alcohol foam dispenser,NA
+SA70,SA70,Shewanella putrefaciens,Shewanella,Shewanellaceae,Alteromonadales,Gammaproteobacteria,Proteobacteria,PAK,PAK-1,PAK-ICU-5,NA,20160524,washroom sink,NA
+BP-2,GCF_002915515.1_ASM291551v1_genomic,Superficieibacter electus,Superficieibacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,bedside light switch,NA
+BP-1,GCF_002915575.1_ASM291557v1_genomic,Superficieibacter electus,Superficieibacter,Enterobacteriaceae,Enterobacterales,Gammaproteobacteria,Proteobacteria,PAK,PAK-4,PAK-ICU-8,NA,20160607,bedside rail,NA
