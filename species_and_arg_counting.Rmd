@@ -1,1 +1,255 @@
-THIS IS A BAD IDEA
+---
+title: "test_repo"
+output: html_document
+---
+
+# init
+
+## set wd
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documents/GitHub/luke-dt/test_repo")
+getwd()
+```
+
+## import libraries
+
+```{r}
+library(tidyverse)
+library(reshape2)
+library(ggbreak)
+library(ggbeeswarm)
+library(ggpattern)
+library(cowplot)
+library(stats)
+library(ggsignif)
+library(grid)
+library(gridExtra)
+library(ggExtra)
+library(dendsort)
+callback = function(hc, ...){dendsort(hc)}
+library(networkD3)
+library(viridisLite)
+library(khroma)
+```
+
+## import data
+
+### custom palettes
+
+```{r}
+pakus_colors <- c("#377eb8","#4daf4a")
+names(pakus_colors) <- c("US","PAK")
+
+order_colors <- c(
+  "#D1BBD7", "#AE76A3", "#882E72", "#1965B0", "#5289C7", "#7BAFDE", "#4EB265",
+  "#90C987", "#CAE0AB", "#F7F056", "#F6C141", "#F1932D", "#E8601C", "#DC050C")
+
+names(order_colors) <- c(
+  "Lactobacillales",  "Flavobacteriales", "Campylobacterales",
+  "Sphingomonadales",  "Rhizobiales",  "Hyphomicrobiales",  "Caulobacterales",
+  "Burkholderiales",  "Neisseriales",  "Xanthomonadales",  "Enterobacterales",
+  "Aeromonadales",  "Alteromonadales",  "Pseudomonadales")
+```
+
+### taxonomy data
+
+```{r}
+raw_tax_dat <- read_csv("isolate_metadata.csv")
+tax_dat <- raw_tax_dat
+tax_dat$study <- ifelse(is.na(tax_dat$pakus.code), "This study", "D'Souza et al.")
+tax_dat <- subset(tax_dat, !(source == "Air")) # drop the air samples
+
+# change PAK MO4 to MO5 since MO4 wasn't collected
+tax_dat <- tax_dat %>%
+  mutate(across(c(month), ~ifelse(country == "PAK" & month == 4, 5, .)))
+
+# add room class and subclass
+tax_dat$room.class <- tax_dat$room.code
+tax_dat$room.class[grepl("ICU",tax_dat$room.class)] <- "ICU"
+tax_dat$room.class[grepl("HOME",tax_dat$room.class)] <- "Home/work"
+tax_dat$room.class[grepl("WORK",tax_dat$room.class)] <- "Home/work"
+
+tax_dat$room.subclass <- tax_dat$room.code
+tax_dat$room.subclass[grepl("ICU",tax_dat$room.subclass)] <- "ICU"
+tax_dat$room.subclass[grepl("HOME",tax_dat$room.subclass)] <- "Home"
+tax_dat$room.subclass[grepl("WORK",tax_dat$room.subclass)] <- "Work"
+
+# add counter col for ordering with geom_bar
+#tax_dat$counter <- 1
+```
+
+# Count isolates by taxa
+
+These plots are just basic counting of isolates, subsetted by what country,
+study, or room it came from.
+
+## by species
+
+### drainomics only
+
+```{r}
+# subset out data for plot, and add a copy/paste species col for "other" col
+tmp_plot_dat <- subset(tax_dat, study=="This study")
+# only show the top ~35 species, the other are "other"
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n >= 5)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+# overall species count, colored by order
+plot_sp_count_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=Order)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), fontface = "bold", nudge_y = 2) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by country of origin
+plot_sp_count_by_country_drain <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=country)) +
+    geom_bar(colour="black")+
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = pakus_colors) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+# overall species count, colored by room class
+plot_sp_count_by_roomclass_drain <- ggplot(tmp_plot_dat,
+    aes(x=fct_infreq(Species.plot), fill=room.class)) +
+    geom_bar(colour="black") +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_bright() +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") +
+    coord_flip()
+
+plot_sp_count_drain
+plot_sp_count_by_country_drain
+plot_sp_count_by_roomclass_drain
+```
+
+### drainomics + pakus overlap
+
+```{r}
+# subset out data for plot, and add a copy/paste species col for "other" col
+tmp_plot_dat <- tax_dat
+# only show the top ~35 species, the other are "other"
+tmp_plot_dat$Species.plot <- ifelse(
+  tmp_plot_dat$Species %in% subset(tmp_plot_dat %>% count(Species), n >= 10)$Species,
+  tmp_plot_dat$Species,
+  NA
+  )
+
+
+# overall species count, colored by order, pattern by study
+plot_sp_count_all <- ggplot(tmp_plot_dat, 
+    aes(x=fct_infreq(Species.plot), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    scale_y_break(c(90, 250)) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position=c(0.8,0.5),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+# overall species count, no NAs
+plot_sp_count_all_no_NAs <- ggplot(subset(tmp_plot_dat, !(is.na(Species.plot))), 
+    aes(x=fct_infreq(Species.plot), fill=Order, pattern=study)) +
+    geom_bar_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    geom_text(stat='count', aes(label=..count..), position = position_stack(0.5), fontface = "bold") +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.position="none",
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Number of isolates") + 
+  coord_flip()
+
+# calculate proportion of isolates that came from each study
+
+proportion_sp <- merge(
+  tmp_plot_dat %>% count(Species, Order, study),
+  tmp_plot_dat %>% count(Species),
+  by="Species", all.y = TRUE
+  )
+proportion_sp <- proportion_sp %>% rename(count = n.x, total.count = n.y)
+proportion_sp <- merge(proportion_sp,
+              subset(tmp_plot_dat, study=="This study") %>% count(Species),
+              all.x = TRUE)
+proportion_sp <- proportion_sp %>% rename(drain.count = n)
+proportion_sp[is.na(proportion_sp)] <- 0
+proportion_sp$drain.pct <- proportion_sp$drain.count / proportion_sp$total.count
+proportion_sp$pct <- proportion_sp$count / proportion_sp$total.count
+
+plot_proportion_sp <- ggplot(proportion_sp, 
+    aes(x=reorder(Species, drain.pct), y=pct, fill=Order, pattern=study)) +
+    geom_col_pattern(position = "stack",
+                     color = "black",
+                     pattern_fill = "white",
+                     pattern_angle = 45,
+                     pattern_density = 0.5,
+                     pattern_spacing = 0.025) +
+    theme_bw() +
+    scale_fill_manual(values = order_colors) +
+    scale_pattern_manual(values = c("D'Souza et al." = "stripe", "This study" = "none")) +
+    theme(axis.text.y=element_text(face = "italic"),
+        legend.title=element_text(face="bold"),
+        legend.background = element_rect(size=0.2, linetype="solid", colour ="black")) +
+    xlab("Species") +
+    ylab("Proportion of all isolates") +
+    coord_flip()
+
+plot_sp_count_all
+plot_sp_count_all_no_NAs
+plot_proportion_sp
+```
+
+# save plots
+
+```{r}
+ggsave(plot_sp_count_all_no_NAs, filename = "plot.pdf", 
+       device = "pdf", 
+       units = "in",
+       width = 6, height = 6)
+```
+
