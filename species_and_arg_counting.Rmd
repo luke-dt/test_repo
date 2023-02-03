@@ -251,6 +251,6 @@ plot_proportion_sp
 ggsave(plot_sp_count_all_no_NAs, filename = "plot.pdf", 
        device = "pdf", 
        units = "in",
-       width = 6, height = 6)
+       width = 6, height = 10)
 ```
 
